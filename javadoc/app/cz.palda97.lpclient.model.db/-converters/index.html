@@ -1,0 +1,145 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Converters - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.db</a>&nbsp;/&nbsp;<a href="./index.html">Converters</a><br/>
+<br/>
+<h1>Converters</h1>
+<code><span class="keyword">class </span><span class="identifier">Converters</span></code>
+<p>Functions that Room can use to work with entities that have non primitive members.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Converters</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Functions that Room can use to work with entities that have non primitive members.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="date-to-timestamp.html">dateToTimestamp</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">dateToTimestamp</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$dateToTimestamp(java.util.Date)/date">date</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-binding-type.html">fromBindingType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromBindingType</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$fromBindingType(cz.palda97.lpclient.model.entities.pipeline.Binding.Type)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/-type/index.html"><span class="identifier">Type</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-config-input-type.html">fromConfigInputType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromConfigInputType</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$fromConfigInputType(cz.palda97.lpclient.model.entities.pipeline.ConfigInput.Type)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/-type/index.html"><span class="identifier">Type</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-execution-status.html">fromExecutionStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromExecutionStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$fromExecutionStatus(cz.palda97.lpclient.model.entities.execution.ExecutionStatus)/executionStatus">executionStatus</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.execution/-execution-status/index.html"><span class="identifier">ExecutionStatus</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-list-config.html">fromListConfig</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromListConfig</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$fromListConfig(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Config)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config/index.html"><span class="identifier">Config</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-list-of-pairs.html">fromListOfPairs</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromListOfPairs</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$fromListOfPairs(kotlin.collections.List((kotlin.Pair((kotlin.String, )))))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-list-string.html">fromListString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromListString</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$fromListString(kotlin.collections.List((kotlin.String)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-map.html">fromMap</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromMap</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$fromMap(kotlin.collections.Map((kotlin.Any, )))/map">map</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">,</span>&nbsp;<span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="from-timestamp.html">fromTimestamp</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fromTimestamp</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$fromTimestamp(kotlin.Long)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-binding-type.html">toBindingType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toBindingType</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$toBindingType(kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/-type/index.html"><span class="identifier">Type</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-config-input-type.html">toConfigInputType</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toConfigInputType</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$toConfigInputType(kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/-type/index.html"><span class="identifier">Type</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-execution-status.html">toExecutionStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toExecutionStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$toExecutionStatus(kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.execution/-execution-status/index.html"><span class="identifier">ExecutionStatus</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-list-config.html">toListConfig</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toListConfig</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$toListConfig(kotlin.String)/string">string</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config/index.html"><span class="identifier">Config</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-list-of-pairs.html">toListOfPairs</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toListOfPairs</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$toListOfPairs(kotlin.String)/string">string</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-list-string.html">toListString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toListString</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$toListString(kotlin.String)/string">string</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="to-map-string-string.html">toMapStringString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toMapStringString</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.Converters$toMapStringString(kotlin.String)/string">string</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

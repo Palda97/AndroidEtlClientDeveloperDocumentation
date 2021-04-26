@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ConnectionAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.view.editcomponent</a>&nbsp;/&nbsp;<a href="./index.html">ConnectionAdapter</a><br/>
+<br/>
+<h1>ConnectionAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">ConnectionAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-connection-view-holder/index.html"><span class="identifier">ConnectionViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../cz.palda97.lpclient.view/-adapter-with-list/index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">,</span>&nbsp;<a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-connection-v/-connection-item/index.html"><span class="identifier">ConnectionItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Adapter for list of connection.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-connection-view-holder/index.html">ConnectionViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ConnectionViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ConnectionAdapter</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>Adapter for list of connection.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">adapter</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ConnectionAdapter</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-list.html">getList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">,</span>&nbsp;<a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-connection-v/-connection-item/index.html"><span class="identifier">ConnectionItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConnectionAdapter$onBindViewHolder(cz.palda97.lpclient.view.editcomponent.ConnectionAdapter.ConnectionViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-connection-view-holder/index.html"><span class="identifier">ConnectionViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConnectionAdapter$onBindViewHolder(cz.palda97.lpclient.view.editcomponent.ConnectionAdapter.ConnectionViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConnectionAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConnectionAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-connection-view-holder/index.html"><span class="identifier">ConnectionViewHolder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-connection-list.html">updateConnectionList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateConnectionList</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConnectionAdapter$updateConnectionList(kotlin.collections.List((kotlin.Pair((cz.palda97.lpclient.model.entities.pipeline.Connection, cz.palda97.lpclient.viewmodel.editcomponent.ConnectionV.ConnectionItem)))))/newConnectionList">newConnectionList</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">,</span>&nbsp;<a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-connection-v/-connection-item/index.html"><span class="identifier">ConnectionItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Update the content of this adapter.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

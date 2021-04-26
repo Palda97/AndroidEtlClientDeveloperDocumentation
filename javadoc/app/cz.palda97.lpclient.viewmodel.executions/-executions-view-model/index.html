@@ -1,0 +1,108 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExecutionsViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.viewmodel.executions</a>&nbsp;/&nbsp;<a href="./index.html">ExecutionsViewModel</a><br/>
+<br/>
+<h1>ExecutionsViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">ExecutionsViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AndroidViewModel</span></code>
+<p>ViewModel for the <a href="../../cz.palda97.lpclient.view.executions/-executions-fragment/index.html">ExecutionsFragment</a>.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ExecutionsViewModel</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.executions.ExecutionsViewModel$<init>(android.app.Application)/application">application</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Application.html"><span class="identifier">Application</span></a><span class="symbol">)</span></code>
+<p>ViewModel for the <a href="../../cz.palda97.lpclient.view.executions/-executions-fragment/index.html">ExecutionsFragment</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="live-executions.html">liveExecutions</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveExecutions</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-execution-v/index.html"><span class="identifier">ExecutionV</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>LiveData with executions, not intended for deletion, sorted
+and transformed into list of <a href="../-execution-v/index.html">ExecutionV</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="cancel-deletion.html">cancelDeletion</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">cancelDeletion</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.executions.ExecutionsViewModel$cancelDeletion(cz.palda97.lpclient.viewmodel.executions.ExecutionV)/executionV">executionV</span><span class="symbol">:</span>&nbsp;<a href="../-execution-v/index.html"><span class="identifier">ExecutionV</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Cancel the deletion of this execution.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-execution.html">deleteExecution</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteExecution</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.executions.ExecutionsViewModel$deleteExecution(cz.palda97.lpclient.viewmodel.executions.ExecutionV)/executionV">executionV</span><span class="symbol">:</span>&nbsp;<a href="../-execution-v/index.html"><span class="identifier">ExecutionV</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Add delete request of this execution to <a href="../../cz.palda97.lpclient.model.repository/-delete-repository/index.html">DeleteRepository</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="refresh-executions-button.html">refreshExecutionsButton</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">refreshExecutionsButton</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="silent-refresh.html">silentRefresh</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">silentRefresh</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Update executions <a href="../../cz.palda97.lpclient.model.db.dao/-execution-dao/silent-insert.html">silently</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-s-c-r-o-l-l.html">SCROLL</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">SCROLL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-instance.html">getInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.executions.ExecutionsViewModel.Companion$getInstance(androidx.lifecycle.ViewModelStoreOwner)/owner">owner</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewModelStoreOwner</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ExecutionsViewModel</span></a></code>
+<p>Gets an instance of <a href="./index.html">ExecutionsViewModel</a> tied to the owner's lifecycle.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

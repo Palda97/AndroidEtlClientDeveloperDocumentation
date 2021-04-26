@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Configuration - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.entities.pipeline</a>&nbsp;/&nbsp;<a href="./index.html">Configuration</a><br/>
+<br/>
+<h1>Configuration</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Configuration</span></code>
+<p>Entity representing a component's configuration.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Configuration</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$<init>(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Config)), kotlin.String)/settings">settings</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-config/index.html"><span class="identifier">Config</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$<init>(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Config)), kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code>
+<p>Entity representing a component's configuration.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="id.html">id</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">id</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="settings.html">settings</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">settings</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../-config/index.html"><span class="identifier">Config</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-inheritances.html">getInheritances</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInheritances</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$getInheritances(kotlin.text.Regex, kotlin.String)/regex">regex</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/index.html"><span class="identifier">Regex</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$getInheritances(kotlin.text.Regex, kotlin.String)/configType">configType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Returns list of inheritances from the main config.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-string.html">getString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getString</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$getString(kotlin.String, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$getString(kotlin.String, kotlin.String)/configType">configType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code>
+<p>Returns string from the main config that matches the key.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-inheritance.html">setInheritance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setInheritance</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$setInheritance(kotlin.String, kotlin.String, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$setInheritance(kotlin.String, kotlin.String, kotlin.String)/newValue">newValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$setInheritance(kotlin.String, kotlin.String, kotlin.String)/configType">configType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets inheritance in the main config that matches the key.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-string.html">setString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setString</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$setString(kotlin.String, kotlin.String, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$setString(kotlin.String, kotlin.String, kotlin.String)/newValue">newValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.Configuration$setString(kotlin.String, kotlin.String, kotlin.String)/configType">configType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets string in the main config that matches the key.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

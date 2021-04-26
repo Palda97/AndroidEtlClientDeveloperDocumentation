@@ -1,0 +1,656 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PipelineDao - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.db.dao</a>&nbsp;/&nbsp;<a href="./index.html">PipelineDao</a><br/>
+<br/>
+<h1>PipelineDao</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">PipelineDao</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PipelineDao</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="delete-all.html">deleteAll</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-bindings.html">deleteAllBindings</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllBindings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-components.html">deleteAllComponents</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllComponents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-config-inputs.html">deleteAllConfigInputs</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllConfigInputs</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-configurations.html">deleteAllConfigurations</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllConfigurations</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-connections.html">deleteAllConnections</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllConnections</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-dialog-js.html">deleteAllDialogJs</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllDialogJs</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-mappings.html">deleteAllMappings</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllMappings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-profiles.html">deleteAllProfiles</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllProfiles</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-tags.html">deleteAllTags</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllTags</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-templates.html">deleteAllTemplates</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllTemplates</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all-vertexes.html">deleteAllVertexes</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAllVertexes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-binding.html">deleteBinding</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteBinding</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteBinding(cz.palda97.lpclient.model.entities.pipeline.Binding)/binding">binding</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html"><span class="identifier">Binding</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-component.html">deleteComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteComponent</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteComponent(cz.palda97.lpclient.model.entities.pipeline.Component)/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-config-input.html">deleteConfigInput</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteConfigInput</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteConfigInput(cz.palda97.lpclient.model.entities.pipeline.ConfigInput)/configInput">configInput</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/index.html"><span class="identifier">ConfigInput</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-configuration.html">deleteConfiguration</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteConfiguration</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteConfiguration(cz.palda97.lpclient.model.entities.pipeline.Configuration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-connection.html">deleteConnection</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteConnection</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteConnection(cz.palda97.lpclient.model.entities.pipeline.Connection)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteConnection</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteConnection(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Connection)))/connections">connections</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-connection-with-vertexes.html">deleteConnectionWithVertexes</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteConnectionWithVertexes</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteConnectionWithVertexes(cz.palda97.lpclient.model.entities.pipeline.Connection)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">&gt;</span></code>
+<p>Removes connection with according vertexes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-definitions.html">deleteDefinitions</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteDefinitions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-dialog-js.html">deleteDialogJs</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteDialogJs</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteDialogJs(cz.palda97.lpclient.model.entities.pipeline.DialogJs)/dialogJs">dialogJs</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-dialog-js/index.html"><span class="identifier">DialogJs</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-pipeline.html">deletePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deletePipeline</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-possible-components.html">deletePossibleComponents</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deletePossibleComponents</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deletePossibleComponents(kotlin.Long)/serverId">serverId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deletePossibleComponents</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deletePossibleComponents(kotlin.collections.List((kotlin.Long)))/serverIds">serverIds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>DO NOT USE FOR RENEWAL OF COMPONENTS.
+Use prepareForPossibleComponentsDownload instead.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-profile.html">deleteProfile</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteProfile</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteProfile(cz.palda97.lpclient.model.entities.pipeline.Profile)/profile">profile</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-profile/index.html"><span class="identifier">Profile</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-template.html">deleteTemplate</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteTemplate</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteTemplate(cz.palda97.lpclient.model.entities.pipeline.Template)/template">template</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html"><span class="identifier">Template</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-vertex.html">deleteVertex</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteVertex</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteVertex(cz.palda97.lpclient.model.entities.pipeline.Vertex)/vertex">vertex</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-vertexes.html">deleteVertexes</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteVertexes</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$deleteVertexes(kotlin.collections.List((kotlin.String)))/ids">ids</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="export-pipeline.html">exportPipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">exportPipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$exportPipeline(kotlin.String)/pipelineId">pipelineId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html"><span class="identifier">Pipeline</span></a><span class="symbol">?</span></code>
+<p>Make a pipeline from everything stored in database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="find-component-by-id.html">findComponentById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findComponentById</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$findComponentById(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="find-configuration-by-component-id.html">findConfigurationByComponentId</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findConfigurationByComponentId</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$findConfigurationByComponentId(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="find-configuration-by-id.html">findConfigurationById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findConfigurationById</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$findConfigurationById(kotlin.String)/configurationId">configurationId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="find-possible-component-by-ids.html">findPossibleComponentByIds</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findPossibleComponentByIds</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$findPossibleComponentByIds(kotlin.String, kotlin.Long)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$findPossibleComponentByIds(kotlin.String, kotlin.Long)/serverId">serverId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.possiblecomponent/-possible-component/index.html"><span class="identifier">PossibleComponent</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="find-status.html">findStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$findStatus(kotlin.String, kotlin.Int)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$findStatus(kotlin.String, kotlin.Int)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-download-status/index.html"><span class="identifier">ConfigDownloadStatus</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="find-template-by-id.html">findTemplateById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findTemplateById</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$findTemplateById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html"><span class="identifier">Template</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="find-vertexes-by-connection-ids.html">findVertexesByConnectionIds</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findVertexesByConnectionIds</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$findVertexesByConnectionIds(kotlin.collections.List((kotlin.String)))/ids">ids</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-components.html">getAllComponents</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllComponents</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-configuration.html">getAllConfiguration</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllConfiguration</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-connections.html">getAllConnections</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllConnections</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-mappings.html">getAllMappings</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllMappings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-same-as/index.html"><span class="identifier">SameAs</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-profiles.html">getAllProfiles</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllProfiles</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-profile/index.html"><span class="identifier">Profile</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-tags.html">getAllTags</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllTags</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-tag/index.html"><span class="identifier">Tag</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-templates.html">getAllTemplates</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllTemplates</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html"><span class="identifier">Template</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-all-vertex.html">getAllVertex</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getAllVertex</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-pipeline-view.html">getPipelineView</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getPipelineView</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$getPipelineView(kotlin.String)/pipelineId">pipelineId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-binding.html">insertBinding</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertBinding</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertBinding(cz.palda97.lpclient.model.entities.pipeline.Binding)/binding">binding</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html"><span class="identifier">Binding</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertBinding</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertBinding(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Binding)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html"><span class="identifier">Binding</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-component.html">insertComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertComponent</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertComponent(cz.palda97.lpclient.model.entities.pipeline.Component)/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertComponent</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertComponent(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Component)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-config-input.html">insertConfigInput</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertConfigInput</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertConfigInput(cz.palda97.lpclient.model.entities.pipeline.ConfigInput)/configInput">configInput</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/index.html"><span class="identifier">ConfigInput</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertConfigInput</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertConfigInput(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.ConfigInput)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/index.html"><span class="identifier">ConfigInput</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-configuration.html">insertConfiguration</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertConfiguration</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertConfiguration(cz.palda97.lpclient.model.entities.pipeline.Configuration)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertConfiguration</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertConfiguration(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Configuration)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-connection.html">insertConnection</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertConnection</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertConnection(cz.palda97.lpclient.model.entities.pipeline.Connection)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertConnection</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertConnection(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Connection)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-dialog-js.html">insertDialogJs</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertDialogJs</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertDialogJs(cz.palda97.lpclient.model.entities.pipeline.DialogJs)/dialogJs">dialogJs</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-dialog-js/index.html"><span class="identifier">DialogJs</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertDialogJs</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertDialogJs(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.DialogJs)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-dialog-js/index.html"><span class="identifier">DialogJs</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-pipeline.html">insertPipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertPipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertPipeline(cz.palda97.lpclient.model.entities.pipeline.Pipeline)/pipeline">pipeline</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html"><span class="identifier">Pipeline</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-pipeline-view.html">insertPipelineView</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertPipelineView</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertPipelineView(cz.palda97.lpclient.model.entities.pipelineview.PipelineView)/pipelineView">pipelineView</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-possible-component.html">insertPossibleComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertPossibleComponent</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertPossibleComponent(cz.palda97.lpclient.model.entities.possiblecomponent.PossibleComponent)/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.possiblecomponent/-possible-component/index.html"><span class="identifier">PossibleComponent</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertPossibleComponent</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertPossibleComponent(kotlin.collections.List((cz.palda97.lpclient.model.entities.possiblecomponent.PossibleComponent)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.possiblecomponent/-possible-component/index.html"><span class="identifier">PossibleComponent</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-possible-status.html">insertPossibleStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertPossibleStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertPossibleStatus(cz.palda97.lpclient.model.entities.possiblecomponent.PossibleStatus)/status">status</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.possiblecomponent/-possible-status/index.html"><span class="identifier">PossibleStatus</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertPossibleStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertPossibleStatus(kotlin.collections.List((cz.palda97.lpclient.model.entities.possiblecomponent.PossibleStatus)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.possiblecomponent/-possible-status/index.html"><span class="identifier">PossibleStatus</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-profile.html">insertProfile</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertProfile</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertProfile(cz.palda97.lpclient.model.entities.pipeline.Profile)/profile">profile</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-profile/index.html"><span class="identifier">Profile</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-same-as.html">insertSameAs</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertSameAs</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertSameAs(cz.palda97.lpclient.model.entities.pipeline.SameAs)/sameAs">sameAs</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-same-as/index.html"><span class="identifier">SameAs</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertSameAs</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertSameAs(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.SameAs)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-same-as/index.html"><span class="identifier">SameAs</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-status.html">insertStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertStatus(cz.palda97.lpclient.model.entities.pipeline.ConfigDownloadStatus)/status">status</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-download-status/index.html"><span class="identifier">ConfigDownloadStatus</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertStatus(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.ConfigDownloadStatus)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-download-status/index.html"><span class="identifier">ConfigDownloadStatus</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-tag.html">insertTag</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertTag</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertTag(cz.palda97.lpclient.model.entities.pipeline.Tag)/tag">tag</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-tag/index.html"><span class="identifier">Tag</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertTag</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertTag(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Tag)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-tag/index.html"><span class="identifier">Tag</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-template.html">insertTemplate</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertTemplate</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertTemplate(cz.palda97.lpclient.model.entities.pipeline.Template)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html"><span class="identifier">Template</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertTemplate</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertTemplate(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Template)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html"><span class="identifier">Template</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-vertex.html">insertVertex</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertVertex</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertVertex(cz.palda97.lpclient.model.entities.pipeline.Vertex)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertVertex</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$insertVertex(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Vertex)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-binding.html">liveBinding</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveBinding</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveBinding(kotlin.String)/templateId">templateId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html"><span class="identifier">Binding</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-binding-with-status.html">liveBindingWithStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveBindingWithStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveBindingWithStatus(kotlin.String)/templateId">templateId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-binding/index.html"><span class="identifier">StatusWithBinding</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveBindingWithStatus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-binding/index.html"><span class="identifier">StatusWithBinding</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-component.html">liveComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveComponent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-component-by-id.html">liveComponentById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveComponentById</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveComponentById(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-component-except-this-one.html">liveComponentExceptThisOne</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveComponentExceptThisOne</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveComponentExceptThisOne(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-config-input.html">liveConfigInput</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveConfigInput</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveConfigInput(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/index.html"><span class="identifier">ConfigInput</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-config-with-status.html">liveConfigWithStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveConfigWithStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveConfigWithStatus(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-config-input/index.html"><span class="identifier">StatusWithConfigInput</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveConfigWithStatus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-config-input/index.html"><span class="identifier">StatusWithConfigInput</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-configuration.html">liveConfiguration</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveConfiguration</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-configuration-by-id.html">liveConfigurationById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveConfigurationById</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveConfigurationById(kotlin.String)/configurationId">configurationId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-connection.html">liveConnection</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveConnection</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-dialog-js.html">liveDialogJs</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveDialogJs</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveDialogJs(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-dialog-js/index.html"><span class="identifier">DialogJs</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-dialog-js-with-status.html">liveDialogJsWithStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveDialogJsWithStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveDialogJsWithStatus(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-dialog-js/index.html"><span class="identifier">StatusWithDialogJs</span></a><span class="symbol">&gt;</span></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveDialogJsWithStatus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-dialog-js/index.html"><span class="identifier">StatusWithDialogJs</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-input-connections-by-component-id.html">liveInputConnectionsByComponentId</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveInputConnectionsByComponentId</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveInputConnectionsByComponentId(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-mappings.html">liveMappings</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveMappings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-same-as/index.html"><span class="identifier">SameAs</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-output-connections-by-component-id.html">liveOutputConnectionsByComponentId</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveOutputConnectionsByComponentId</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$liveOutputConnectionsByComponentId(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-pipeline.html">livePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">livePipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$livePipeline(kotlin.String)/pipelineId">pipelineId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html"><span class="identifier">Pipeline</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-pipeline-view.html">livePipelineView</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">livePipelineView</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$livePipelineView(kotlin.String)/pipelineId">pipelineId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-possible-components.html">livePossibleComponents</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">livePossibleComponents</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$livePossibleComponents(kotlin.Long)/serverId">serverId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.possiblecomponent/-status-with-possibles/index.html"><span class="identifier">StatusWithPossibles</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-profile.html">liveProfile</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveProfile</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-profile/index.html"><span class="identifier">Profile</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-tags.html">liveTags</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveTags</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-tag/index.html"><span class="identifier">Tag</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-template.html">liveTemplate</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveTemplate</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html"><span class="identifier">Template</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-vertex.html">liveVertex</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">liveVertex</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="prepare-for-possible-components-download.html">prepareForPossibleComponentsDownload</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">prepareForPossibleComponentsDownload</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$prepareForPossibleComponentsDownload(kotlin.Long)/serverId">serverId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">prepareForPossibleComponentsDownload</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$prepareForPossibleComponentsDownload(kotlin.collections.List((kotlin.Long)))/serverIds">serverIds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets download status for possible components for this server
+and delete it's previously downloaded possible components.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="purge-component.html">purgeComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">purgeComponent</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$purgeComponent(cz.palda97.lpclient.model.entities.pipeline.Component)/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Deletes the component with all it's connections and their vertexes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="replace-pipeline.html">replacePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">replacePipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$replacePipeline(cz.palda97.lpclient.model.entities.pipeline.Pipeline)/pipeline">pipeline</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html"><span class="identifier">Pipeline</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="select-component-connections.html">selectComponentConnections</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">selectComponentConnections</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineDao$selectComponentConnections(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

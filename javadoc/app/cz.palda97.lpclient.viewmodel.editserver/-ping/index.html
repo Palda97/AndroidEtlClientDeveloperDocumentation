@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Ping - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.viewmodel.editserver</a>&nbsp;/&nbsp;<a href="./index.html">Ping</a><br/>
+<br/>
+<h1>Ping</h1>
+<code><span class="keyword">class </span><span class="identifier">Ping</span></code>
+<p>Class for pinging a server.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-status/index.html">Status</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">Status</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">Ping</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editserver.Ping$<init>(cz.palda97.lpclient.model.entities.server.ServerInstance)/server">server</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span></code>
+<p>Class for pinging a server.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="ping-url.html">pingUrl</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">pingUrl</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Server address without protocol or slashes.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="ping.html">ping</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">ping</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-status/index.html"><span class="identifier">Status</span></a></code>
+<p>Classic ping.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="try-api-call.html">tryApiCall</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">tryApiCall</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="-status/index.html"><span class="identifier">Status</span></a></code>
+<p>Try to download pipelineViews just to know that it's possible.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PipelineRecyclerAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.view.pipelines</a>&nbsp;/&nbsp;<a href="./index.html">PipelineRecyclerAdapter</a><br/>
+<br/>
+<h1>PipelineRecyclerAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">PipelineRecyclerAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-pipeline-view-holder/index.html"><span class="identifier">PipelineViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../cz.palda97.lpclient.view/-adapter-with-list/index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of pipelineViews.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-pipeline-view-holder/index.html">PipelineViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PipelineViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PipelineRecyclerAdapter</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.pipelines.PipelineRecyclerAdapter$<init>(kotlin.Function1((cz.palda97.lpclient.model.entities.pipelineview.PipelineView, kotlin.Unit)), kotlin.Function1((cz.palda97.lpclient.model.entities.pipelineview.PipelineView, kotlin.Unit)))/editPipeline">editPipeline</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.pipelines.PipelineRecyclerAdapter$<init>(kotlin.Function1((cz.palda97.lpclient.model.entities.pipelineview.PipelineView, kotlin.Unit)), kotlin.Function1((cz.palda97.lpclient.model.entities.pipelineview.PipelineView, kotlin.Unit)))/launchPipeline">launchPipeline</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span></code>
+<p>Adapter for list of pipelineViews.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">adapter</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PipelineRecyclerAdapter</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-list.html">getList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.pipelines.PipelineRecyclerAdapter$onBindViewHolder(cz.palda97.lpclient.view.pipelines.PipelineRecyclerAdapter.PipelineViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-pipeline-view-holder/index.html"><span class="identifier">PipelineViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.pipelines.PipelineRecyclerAdapter$onBindViewHolder(cz.palda97.lpclient.view.pipelines.PipelineRecyclerAdapter.PipelineViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.pipelines.PipelineRecyclerAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.pipelines.PipelineRecyclerAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-pipeline-view-holder/index.html"><span class="identifier">PipelineViewHolder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-pipeline-list.html">updatePipelineList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updatePipelineList</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.pipelines.PipelineRecyclerAdapter$updatePipelineList(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipelineview.PipelineView)))/newPipelineList">newPipelineList</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Update the content of this adapter.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,221 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>cz.palda97.lpclient.model.entities.pipeline - app</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">app</a>&nbsp;/&nbsp;<a href="./index.html">cz.palda97.lpclient.model.entities.pipeline</a><br/>
+<br/>
+<h2>Package cz.palda97.lpclient.model.entities.pipeline</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-binding/index.html">Binding</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Binding</span></code>
+<p>Entity representing template's binding.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-binding-factory/index.html">BindingFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BindingFactory</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-component/index.html">Component</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Component</span></code>
+<p>Entity representing a component from a pipeline.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-config/index.html">Config</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Config</span></code>
+<p>Content of configuration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-config-download-status/index.html">ConfigDownloadStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ConfigDownloadStatus</span></code>
+<p>Entity representing download status of either <a href="-config-input/index.html">ConfigInputs</a>,
+<a href="-dialog-js/index.html">DialogJs</a> or <a href="-binding/index.html">Bindings</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-config-input/index.html">ConfigInput</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ConfigInput</span></code>
+<p>Entity representing a single configuration field of a component.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-config-input-factory/index.html">ConfigInputFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ConfigInputFactory</span></code>
+<p>Factory for transforming dialog.html to list of <a href="-config-input/index.html">ConfigInput</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-configuration/index.html">Configuration</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Configuration</span></code>
+<p>Entity representing a component's configuration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-connection/index.html">Connection</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Connection</span></code>
+<p>Entity representing a connection between two <a href="-component/index.html">components</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-dialog-js/index.html">DialogJs</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DialogJs</span></code>
+<p>Entity representing dialog.js.
+It is mainly used as a tool for mapping
+<a href="-config-input/index.html">ConfigInput's</a> id to <a href="-config/index.html">Config's</a> id.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-dialog-js-factory/index.html">DialogJsFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DialogJsFactory</span></code>
+<p>Factory for transforming dialog.js to <a href="-dialog-js/index.html">DialogJs</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-pipeline/index.html">Pipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Pipeline</span></code>
+<p>The whole pipeline.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-pipeline-factory/index.html">PipelineFactory</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PipelineFactory</span></code>
+<p>Factory for transforming jsonLd to <a href="-pipeline/index.html">Pipeline</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-profile/index.html">Profile</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Profile</span></code>
+<p>Entity representing execution profile.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-same-as/index.html">SameAs</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">SameAs</span></code>
+<p>Entity representing sameAs</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-status-with-binding/index.html">StatusWithBinding</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StatusWithBinding</span></code>
+<p>Wrapper for <a href="-config-download-status/index.html">ConfigDownloadStatus</a> and list of <a href="-binding/index.html">Bindings</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-status-with-config-input/index.html">StatusWithConfigInput</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StatusWithConfigInput</span></code>
+<p>Wrapper for <a href="-config-download-status/index.html">ConfigDownloadStatus</a> and list of <a href="-config-input/index.html">ConfigInputs</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-status-with-dialog-js/index.html">StatusWithDialogJs</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">StatusWithDialogJs</span></code>
+<p>Wrapper for <a href="-config-download-status/index.html">ConfigDownloadStatus</a> and <a href="-dialog-js/index.html">DialogJs</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-tag/index.html">Tag</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Tag</span></code>
+<p>Entity representing pipeline tag.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-template/index.html">Template</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Template</span></code>
+<p>Entity representing template.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-vertex/index.html">Vertex</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">Vertex</span></code>
+<p>Entity representing connection's vertex.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="json-ld.html">jsonLd</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><a href="-pipeline/index.html"><span class="identifier">Pipeline</span></a><span class="symbol">.</span><span class="identifier">jsonLd</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Generate jsonLd from pipeline.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

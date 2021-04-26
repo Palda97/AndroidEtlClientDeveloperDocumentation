@@ -1,0 +1,90 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PipelineViewDao - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.db.dao</a>&nbsp;/&nbsp;<a href="./index.html">PipelineViewDao</a><br/>
+<br/>
+<h1>PipelineViewDao</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">PipelineViewDao</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PipelineViewDao</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="delete-all.html">deleteAll</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-and-insert-pipeline-views.html">deleteAndInsertPipelineViews</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAndInsertPipelineViews</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineViewDao$deleteAndInsertPipelineViews(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipelineview.PipelineView)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Deletes all pipelineViews and inserts new ones.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-by-server.html">deleteByServer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteByServer</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineViewDao$deleteByServer(kotlin.Long)/serverId">serverId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-pipeline-view.html">deletePipelineView</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deletePipelineView</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineViewDao$deletePipelineView(cz.palda97.lpclient.model.entities.pipelineview.PipelineView)/pipelineView">pipelineView</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="find-pipeline-view-by-id.html">findPipelineViewById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findPipelineViewById</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineViewDao$findPipelineViewById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert.html">insert</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineViewDao$insert(cz.palda97.lpclient.model.entities.pipelineview.PipelineView)/pipelineView">pipelineView</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-list.html">insertList</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertList</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.PipelineViewDao$insertList(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipelineview.PipelineView)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="select-deleted.html">selectDeleted</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">selectDeleted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span></code>
+<p>Select all pipelineViews with that have matching deletion mark stored in database.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

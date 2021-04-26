@@ -1,0 +1,145 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MailPackage - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model</a>&nbsp;/&nbsp;<a href="./index.html">MailPackage</a><br/>
+<br/>
+<h1>MailPackage</h1>
+<code><span class="keyword">class </span><span class="identifier">MailPackage</span><span class="symbol">&lt;</span><span class="identifier">content</span><span class="symbol">&gt;</span></code>
+<p>Wrapper for an object, one of three statuses and a message.</p>
+<h3>Parameters</h3>
+<p><a name="content"></a>
+<code>content</code> - Type of object to be potentially stored in mail content.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-status/index.html">Status</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">Status</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">MailPackage</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.MailPackage$<init>(cz.palda97.lpclient.model.MailPackage.content)/mailContent">mailContent</span><span class="symbol">:</span>&nbsp;<a href="index.html#content"><span class="identifier">content</span></a><span class="symbol">)</span></code>
+<p>Makes a MailPackage instance with this object, <a href="-status/-o-k.html">OK</a> status and empty message.</p>
+<code><span class="identifier">MailPackage</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.MailPackage$<init>(cz.palda97.lpclient.model.MailPackage.content, cz.palda97.lpclient.model.MailPackage.Status, kotlin.String)/mailContent">mailContent</span><span class="symbol">:</span>&nbsp;<a href="index.html#content"><span class="identifier">content</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.MailPackage$<init>(cz.palda97.lpclient.model.MailPackage.content, cz.palda97.lpclient.model.MailPackage.Status, kotlin.String)/status">status</span><span class="symbol">:</span>&nbsp;<a href="-status/index.html"><span class="identifier">Status</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.MailPackage$<init>(cz.palda97.lpclient.model.MailPackage.content, cz.palda97.lpclient.model.MailPackage.Status, kotlin.String)/msg">msg</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code>
+<p>Wrapper for an object, one of three statuses and a message.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="is-error.html">isError</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">isError</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-loading.html">isLoading</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">isLoading</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="is-ok.html">isOk</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">isOk</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="mail-content.html">mailContent</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">mailContent</span><span class="symbol">: </span><a href="index.html#content"><span class="identifier">content</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="msg.html">msg</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">msg</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="status.html">status</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">status</span><span class="symbol">: </span><a href="-status/index.html"><span class="identifier">Status</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="broken-package.html">brokenPackage</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">dummy</span><span class="symbol">&gt;</span> <span class="identifier">brokenPackage</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.MailPackage.Companion$brokenPackage(kotlin.String)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="broken-package.html#dummy"><span class="identifier">dummy</span></a><span class="symbol">&gt;</span></code>
+<p>Returns MailPackage instance with <a href="-status/-e-r-r-o-r.html">ERROR</a> status.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="error.html">error</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">error</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.MailPackage.Companion$error(kotlin.String)/message">message</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a>&nbsp;<span class="symbol">=</span>&nbsp;""<span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code>
+<p>Returns MailPackage instance with <a href="-status/-e-r-r-o-r.html">ERROR</a> status
+and Boolean false as a mail content.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="loading.html">loading</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">loading</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code>
+<p>Returns MailPackage instance with <a href="-status/-l-o-a-d-i-n-g.html">LOADING</a> status
+and Boolean false as a mail content.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="loading-package.html">loadingPackage</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">dummy</span><span class="symbol">&gt;</span> <span class="identifier">loadingPackage</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="loading-package.html#dummy"><span class="identifier">dummy</span></a><span class="symbol">&gt;</span></code>
+<p>Returns MailPackage instance with <a href="-status/-o-k.html">LOADING</a> status.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="ok.html">ok</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">ok</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span></code>
+<p>Returns MailPackage instance with <a href="-status/-o-k.html">OK</a> status
+and Boolean true as a mail content.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

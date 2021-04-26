@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ConfigInputAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.view.editcomponent</a>&nbsp;/&nbsp;<a href="./index.html">ConfigInputAdapter</a><br/>
+<br/>
+<h1>ConfigInputAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">ConfigInputAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-config-input-view-holder/index.html"><span class="identifier">ConfigInputViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../cz.palda97.lpclient.view/-adapter-with-list/index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/index.html"><span class="identifier">ConfigInput</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of fields of configuration.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-config-input-view-holder/index.html">ConfigInputViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ConfigInputViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ConfigInputAdapter</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter$<init>(android.content.Context, kotlin.Function2((kotlin.String, , kotlin.String)), kotlin.Function3((kotlin.String, , , kotlin.Unit)))/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter$<init>(android.content.Context, kotlin.Function2((kotlin.String, , kotlin.String)), kotlin.Function3((kotlin.String, , , kotlin.Unit)))/configGetString">configGetString</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter$<init>(android.content.Context, kotlin.Function2((kotlin.String, , kotlin.String)), kotlin.Function3((kotlin.String, , , kotlin.Unit)))/configSetString">configSetString</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">?</span><span class="symbol">)</span></code>
+<p>Adapter for list of fields of configuration.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">adapter</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ConfigInputAdapter</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-list.html">getList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/index.html"><span class="identifier">ConfigInput</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter$onBindViewHolder(cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter.ConfigInputViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-config-input-view-holder/index.html"><span class="identifier">ConfigInputViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter$onBindViewHolder(cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter.ConfigInputViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-config-input-view-holder/index.html"><span class="identifier">ConfigInputViewHolder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-config-input-list.html">updateConfigInputList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateConfigInputList</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.ConfigInputAdapter$updateConfigInputList(cz.palda97.lpclient.viewmodel.editcomponent.ConfigInputComplete)/newConfigInputComplete">newConfigInputComplete</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-config-input-complete/index.html"><span class="identifier">ConfigInputComplete</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Update the content of this adapter.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EditServerViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.viewmodel.editserver</a>&nbsp;/&nbsp;<a href="./index.html">EditServerViewModel</a><br/>
+<br/>
+<h1>EditServerViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">EditServerViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewModel</span></code>
+<p>ViewModel for the <a href="../../cz.palda97.lpclient.view/-edit-server-activity/index.html">EditServerActivity</a>.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-save-status/index.html">SaveStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">SaveStatus</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">EditServerViewModel</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>ViewModel for the <a href="../../cz.palda97.lpclient.view/-edit-server-activity/index.html">EditServerActivity</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="ping-status.html">pingStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">pingStatus</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="../-ping/-status/index.html"><span class="identifier">Status</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>LiveData with url paired with information about ping.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-successful.html">saveSuccessful</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">saveSuccessful</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="-save-status/index.html"><span class="identifier">SaveStatus</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with information about server saving.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="tmp-server.html">tmpServer</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">tmpServer</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="ping.html">ping</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">ping</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editserver.EditServerViewModel$ping(cz.palda97.lpclient.model.entities.server.ServerInstance)/server">server</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Ping this server and propagate result through <a href="ping-status.html">pingStatus</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="reset-ping-status.html">resetPingStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resetPingStatus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets the <a href="ping-status.html">pingStatus</a> to <a href="../../cz.palda97.lpclient.model/-mail-package/-status/-l-o-a-d-i-n-g.html">LOADING</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="reset-status.html">resetStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resetStatus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets the <a href="save-successful.html">saveSuccessful</a> to <a href="-save-status/-w-a-i-t-i-n-g.html">WAITING</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-server.html">saveServer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveServer</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editserver.EditServerViewModel$saveServer(cz.palda97.lpclient.model.entities.server.ServerInstance)/serverInstance">serverInstance</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a>&nbsp;<span class="symbol">=</span>&nbsp;tmpServer<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Check attributes of this server instance by <a href="../-server-instance-attribute-check/index.html">ServerInstanceAttributeCheck</a>
+and if successful, insert it into database.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-instance.html">getInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editserver.EditServerViewModel.Companion$getInstance(androidx.lifecycle.ViewModelStoreOwner)/owner">owner</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewModelStoreOwner</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">EditServerViewModel</span></a></code>
+<p>Gets an instance of <a href="./index.html">EditServerViewModel</a> tied to the owner's lifecycle.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

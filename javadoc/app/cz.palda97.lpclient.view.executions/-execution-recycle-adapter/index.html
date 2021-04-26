@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExecutionRecycleAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.view.executions</a>&nbsp;/&nbsp;<a href="./index.html">ExecutionRecycleAdapter</a><br/>
+<br/>
+<h1>ExecutionRecycleAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">ExecutionRecycleAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-execution-view-holder/index.html"><span class="identifier">ExecutionViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../cz.palda97.lpclient.view/-adapter-with-list/index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.viewmodel.executions/-execution-v/index.html"><span class="identifier">ExecutionV</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of executions.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-execution-view-holder/index.html">ExecutionViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ExecutionViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ExecutionRecycleAdapter</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.executions.ExecutionRecycleAdapter$<init>(kotlin.Function1((cz.palda97.lpclient.viewmodel.executions.ExecutionV, kotlin.Unit)), kotlin.Function1((cz.palda97.lpclient.viewmodel.executions.ExecutionV, kotlin.Unit)))/viewExecution">viewExecution</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../cz.palda97.lpclient.viewmodel.executions/-execution-v/index.html"><span class="identifier">ExecutionV</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.executions.ExecutionRecycleAdapter$<init>(kotlin.Function1((cz.palda97.lpclient.viewmodel.executions.ExecutionV, kotlin.Unit)), kotlin.Function1((cz.palda97.lpclient.viewmodel.executions.ExecutionV, kotlin.Unit)))/launchExecution">launchExecution</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../cz.palda97.lpclient.viewmodel.executions/-execution-v/index.html"><span class="identifier">ExecutionV</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span></code>
+<p>Adapter for list of executions.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">adapter</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">ExecutionRecycleAdapter</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-list.html">getList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.viewmodel.executions/-execution-v/index.html"><span class="identifier">ExecutionV</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.executions.ExecutionRecycleAdapter$onBindViewHolder(cz.palda97.lpclient.view.executions.ExecutionRecycleAdapter.ExecutionViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-execution-view-holder/index.html"><span class="identifier">ExecutionViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.executions.ExecutionRecycleAdapter$onBindViewHolder(cz.palda97.lpclient.view.executions.ExecutionRecycleAdapter.ExecutionViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.executions.ExecutionRecycleAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.executions.ExecutionRecycleAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-execution-view-holder/index.html"><span class="identifier">ExecutionViewHolder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-execution-list.html">updateExecutionList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateExecutionList</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.executions.ExecutionRecycleAdapter$updateExecutionList(kotlin.collections.List((cz.palda97.lpclient.viewmodel.executions.ExecutionV)))/newExecutionList">newExecutionList</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.viewmodel.executions/-execution-v/index.html"><span class="identifier">ExecutionV</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Update the content of this adapter.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

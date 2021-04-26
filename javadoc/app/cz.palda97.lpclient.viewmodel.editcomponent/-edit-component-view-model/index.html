@@ -1,0 +1,255 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>EditComponentViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.viewmodel.editcomponent</a>&nbsp;/&nbsp;<a href="./index.html">EditComponentViewModel</a><br/>
+<br/>
+<h1>EditComponentViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">EditComponentViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AndroidViewModel</span></code>
+<p>ViewModel for the <a href="../../cz.palda97.lpclient.view/-edit-component-activity/index.html">EditComponentActivity</a>.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">EditComponentViewModel</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$<init>(android.app.Application)/application">application</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Application.html"><span class="identifier">Application</span></a><span class="symbol">)</span></code>
+<p>ViewModel for the <a href="../../cz.palda97.lpclient.view/-edit-component-activity/index.html">EditComponentActivity</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="connection-bindings.html">connectionBindings</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">connectionBindings</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-binding/index.html"><span class="identifier">StatusWithBinding</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with bindings that are not on the same side as a binding user has clicked on to create connection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="connection-components.html">connectionComponents</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">connectionComponents</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p><a href="../../cz.palda97.lpclient.model.repository/-connection-dialog-repository/live-components.html">ConnectionDialogRepository.liveComponents</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="current-component.html">currentComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">currentComponent</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">?</span></code>
+<p>Component that is being edited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="last-deleted-connection.html">lastDeletedConnection</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lastDeletedConnection</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">?</span></code>
+<p>Last deleted connection stored for the UNDO option.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="last-deleted-vertexes.html">lastDeletedVertexes</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lastDeletedVertexes</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Last deleted vertexes stored for the UNDO option.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="last-selected-binding-position.html">lastSelectedBindingPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lastSelectedBindingPosition</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code>
+<p><a href="../../cz.palda97.lpclient.model.repository/-connection-dialog-repository/last-selected-binding-position.html">ConnectionDialogRepository.lastSelectedBindingPosition</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="last-selected-component-position.html">lastSelectedComponentPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lastSelectedComponentPosition</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code>
+<p><a href="../../cz.palda97.lpclient.model.repository/-connection-dialog-repository/last-selected-component-position.html">ConnectionDialogRepository.lastSelectedComponentPosition</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="live-binding.html">liveBinding</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveBinding</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-binding/index.html"><span class="identifier">StatusWithBinding</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with <a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-binding/index.html">bindings with statuses</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="live-config-input-context.html">liveConfigInputContext</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveConfigInputContext</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../-config-input-context/index.html"><span class="identifier">ConfigInputContext</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with content for the <a href="../../cz.palda97.lpclient.view.editcomponent/-configuration-fragment/index.html">ConfigurationFragment</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="live-inheritances.html">liveInheritances</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveInheritances</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.repository/-component-repository/-status-code/index.html"><span class="identifier">StatusCode</span></a><span class="symbol">,</span>&nbsp;<a href="../-inheritance-v-wrapper/index.html"><span class="identifier">InheritanceVWrapper</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>LiveData with content for the <a href="../../cz.palda97.lpclient.view.editcomponent/-inheritance-fragment/index.html">InheritanceFragment</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="live-input-connection-v.html">liveInputConnectionV</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveInputConnectionV</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../-config-input-context/index.html"><span class="identifier">ConfigInputContext</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with display data for input connections.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="live-output-connection-v.html">liveOutputConnectionV</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveOutputConnectionV</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../-config-input-context/index.html"><span class="identifier">ConfigInputContext</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with display data for output connections.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-connection-button.html">addConnectionButton</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addConnectionButton</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$addConnectionButton(cz.palda97.lpclient.model.entities.pipeline.Binding)/binding">binding</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html"><span class="identifier">Binding</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Prepare <a href="../../cz.palda97.lpclient.model.repository/-connection-dialog-repository/index.html">ConnectionDialogRepository</a>
+for a new connection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="config-get-string.html">configGetString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">configGetString</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$configGetString(kotlin.String, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$configGetString(kotlin.String, kotlin.String)/configType">configType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="config-set-string.html">configSetString</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">configSetString</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$configSetString(kotlin.String, kotlin.String, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$configSetString(kotlin.String, kotlin.String, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$configSetString(kotlin.String, kotlin.String, kotlin.String)/configType">configType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-connection.html">deleteConnection</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteConnection</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$deleteConnection(cz.palda97.lpclient.model.entities.pipeline.Connection)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code>
+<p>Deletes connection with it's vertexes from database and store them locally for the UNDO option.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-current-component.html">deleteCurrentComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteCurrentComponent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code>
+<p>Deletes component that is being edited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="persist-component.html">persistComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">persistComponent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates component that is being edited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="persist-configuration.html">persistConfiguration</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">persistConfiguration</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Updates configuration of component that is being edited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="prepare-bindings.html">prepareBindings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">prepareBindings</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$prepareBindings(cz.palda97.lpclient.model.entities.pipeline.Component)/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code>
+<p>Tell <a href="../../cz.palda97.lpclient.model.repository/-connection-dialog-repository/index.html">ConnectionDialogRepository</a>
+what component to use for preparing it's bindings.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-connection.html">saveConnection</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">saveConnection</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$saveConnection(cz.palda97.lpclient.model.entities.pipeline.Component, cz.palda97.lpclient.model.entities.pipeline.Binding)/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$saveConnection(cz.palda97.lpclient.model.entities.pipeline.Component, cz.palda97.lpclient.model.entities.pipeline.Binding)/binding">binding</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html"><span class="identifier">Binding</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Creates a connection between the component and currently edited component.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-inheritance.html">setInheritance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setInheritance</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$setInheritance(kotlin.String, kotlin.Boolean, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$setInheritance(kotlin.String, kotlin.Boolean, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel$setInheritance(kotlin.String, kotlin.Boolean, kotlin.String)/configType">configType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="undo-last-deleted.html">undoLastDeleted</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">undoLastDeleted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code>
+<p>UNDO method for deleting connection with vertexes.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-instance.html">getInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.editcomponent.EditComponentViewModel.Companion$getInstance(androidx.lifecycle.ViewModelStoreOwner)/owner">owner</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewModelStoreOwner</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">EditComponentViewModel</span></a></code>
+<p>Gets an instance of <a href="./index.html">EditComponentViewModel</a> tied to the owner's lifecycle.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

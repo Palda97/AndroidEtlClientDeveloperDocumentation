@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SettingsViewModel - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.viewmodel.settings</a>&nbsp;/&nbsp;<a href="./index.html">SettingsViewModel</a><br/>
+<br/>
+<h1>SettingsViewModel</h1>
+<code><span class="keyword">class </span><span class="identifier">SettingsViewModel</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">AndroidViewModel</span></code>
+<p>ViewModel for the <a href="../../cz.palda97.lpclient.view.settings/-settings-fragment/index.html">SettingsFragment</a>.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">SettingsViewModel</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.settings.SettingsViewModel$<init>(android.app.Application)/application">application</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Application.html"><span class="identifier">Application</span></a><span class="symbol">)</span></code>
+<p>ViewModel for the <a href="../../cz.palda97.lpclient.view.settings/-settings-fragment/index.html">SettingsFragment</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="active-live-servers.html">activeLiveServers</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">activeLiveServers</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-servers.html">liveServers</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveServers</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="night-mode.html">nightMode</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">nightMode</span><span class="symbol">: </span><a href="../-night-mode-enum/index.html"><span class="identifier">NightModeEnum</span></a></code>
+<p>A property for getting and setting the night mode.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="notifications.html">notifications</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">notifications</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code>
+<p>A property for turning notifications on and off and getting this settings.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="active-change.html">activeChange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">activeChange</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.settings.SettingsViewModel$activeChange(cz.palda97.lpclient.model.entities.server.ServerInstance)/server">server</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Change the active property of this <a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html">ServerInstance</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="add-server.html">addServer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addServer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Prepare <a href="../../cz.palda97.lpclient.model.repository/-edit-server-repository/index.html">EditServerRepository</a> for a new server instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-server.html">deleteServer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">deleteServer</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.settings.SettingsViewModel$deleteServer(cz.palda97.lpclient.model.entities.server.ServerInstance)/serverInstance">serverInstance</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Delete this server instance from database.
+(Also, store it locally for the UNDO option)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="edit-server.html">editServer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">editServer</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.settings.SettingsViewModel$editServer(cz.palda97.lpclient.model.entities.server.ServerInstance)/serverInstance">serverInstance</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Prepare <a href="../../cz.palda97.lpclient.model.repository/-edit-server-repository/index.html">EditServerRepository</a> for this server instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="find-active-server-by-name.html">findActiveServerByName</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">findActiveServerByName</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.settings.SettingsViewModel$findActiveServerByName(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">?</span></code>
+<p>Find active server by name.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="undo-last-delete-server.html">undoLastDeleteServer</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">undoLastDeleteServer</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>UNDO the last deletion of a server instance.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-instance.html">getInstance</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.viewmodel.settings.SettingsViewModel.Companion$getInstance(androidx.lifecycle.ViewModelStoreOwner)/owner">owner</span><span class="symbol">:</span>&nbsp;<span class="identifier">ViewModelStoreOwner</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">SettingsViewModel</span></a></code>
+<p>Gets an instance of <a href="./index.html">SettingsViewModel</a> tied to the owner's lifecycle.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

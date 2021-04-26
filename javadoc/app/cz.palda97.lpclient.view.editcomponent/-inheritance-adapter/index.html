@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>InheritanceAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.view.editcomponent</a>&nbsp;/&nbsp;<a href="./index.html">InheritanceAdapter</a><br/>
+<br/>
+<h1>InheritanceAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">InheritanceAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-inheritance-view-holder/index.html"><span class="identifier">InheritanceViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../cz.palda97.lpclient.view/-adapter-with-list/index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-inheritance-v/index.html"><span class="identifier">InheritanceV</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of inheritance fields.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-inheritance-view-holder/index.html">InheritanceViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">InheritanceViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">InheritanceAdapter</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.InheritanceAdapter$<init>(kotlin.Function3((kotlin.String, kotlin.Boolean, , kotlin.Unit)))/setInheritance">setInheritance</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="identifier">fullName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">,</span>&nbsp;<span class="identifier">configType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">?</span><span class="symbol">)</span></code>
+<p>Adapter for list of inheritance fields.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">adapter</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">InheritanceAdapter</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-list.html">getList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-inheritance-v/index.html"><span class="identifier">InheritanceV</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.InheritanceAdapter$onBindViewHolder(cz.palda97.lpclient.view.editcomponent.InheritanceAdapter.InheritanceViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-inheritance-view-holder/index.html"><span class="identifier">InheritanceViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.InheritanceAdapter$onBindViewHolder(cz.palda97.lpclient.view.editcomponent.InheritanceAdapter.InheritanceViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.InheritanceAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.InheritanceAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-inheritance-view-holder/index.html"><span class="identifier">InheritanceViewHolder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-inheritance-v-wrapper.html">updateInheritanceVWrapper</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateInheritanceVWrapper</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.editcomponent.InheritanceAdapter$updateInheritanceVWrapper(cz.palda97.lpclient.viewmodel.editcomponent.InheritanceVWrapper)/newInheritanceVWrapper">newInheritanceVWrapper</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-inheritance-v-wrapper/index.html"><span class="identifier">InheritanceVWrapper</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Update the content of this adapter.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

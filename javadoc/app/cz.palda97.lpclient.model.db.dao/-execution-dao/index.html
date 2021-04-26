@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExecutionDao - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.db.dao</a>&nbsp;/&nbsp;<a href="./index.html">ExecutionDao</a><br/>
+<br/>
+<h1>ExecutionDao</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">ExecutionDao</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ExecutionDao</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="delete.html">delete</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">delete</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.ExecutionDao$delete(cz.palda97.lpclient.model.entities.execution.Execution)/execution">execution</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.execution/-execution/index.html"><span class="identifier">Execution</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-all.html">deleteAll</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteAll</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-by-server.html">deleteByServer</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteByServer</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.ExecutionDao$deleteByServer(kotlin.Long)/serverId">serverId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="find-by-id.html">findById</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findById</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.ExecutionDao$findById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.execution/-execution/index.html"><span class="identifier">Execution</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="insert.html">insert</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.ExecutionDao$insert(kotlin.collections.List((cz.palda97.lpclient.model.entities.execution.Execution)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.execution/-execution/index.html"><span class="identifier">Execution</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insert</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.ExecutionDao$insert(cz.palda97.lpclient.model.entities.execution.Execution)/list">list</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.execution/-execution/index.html"><span class="identifier">Execution</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="renewal.html">renewal</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">renewal</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.ExecutionDao$renewal(kotlin.collections.List((cz.palda97.lpclient.model.entities.execution.Execution)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.execution/-execution/index.html"><span class="identifier">Execution</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Deletes all executions and inserts new ones.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="select-deleted.html">selectDeleted</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">selectDeleted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.execution/-execution/index.html"><span class="identifier">Execution</span></a><span class="symbol">&gt;</span></code>
+<p>Select all executions with that have matching deletion mark stored in database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="silent-insert.html">silentInsert</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">silentInsert</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.db.dao.ExecutionDao$silentInsert(kotlin.collections.List((cz.palda97.lpclient.model.entities.execution.Execution)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.execution/-execution/index.html"><span class="identifier">Execution</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Insert executions that are not in database and ignore those which are already stored
+(don't rewrite executions).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ServerRecyclerAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.view.settings</a>&nbsp;/&nbsp;<a href="./index.html">ServerRecyclerAdapter</a><br/>
+<br/>
+<h1>ServerRecyclerAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">ServerRecyclerAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="-server-view-holder/index.html"><span class="identifier">ServerViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="../../cz.palda97.lpclient.view/-adapter-with-list/index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of servers.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-server-view-holder/index.html">ServerViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ServerViewHolder</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">ViewHolder</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ServerRecyclerAdapter</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.settings.ServerRecyclerAdapter$<init>(kotlin.Function1((cz.palda97.lpclient.model.entities.server.ServerInstance, kotlin.Unit)), kotlin.Function1((cz.palda97.lpclient.model.entities.server.ServerInstance, kotlin.Unit)))/editServer">editServer</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.settings.ServerRecyclerAdapter$<init>(kotlin.Function1((cz.palda97.lpclient.model.entities.server.ServerInstance, kotlin.Unit)), kotlin.Function1((cz.palda97.lpclient.model.entities.server.ServerInstance, kotlin.Unit)))/activeChange">activeChange</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">)</span></code>
+<p>Adapter for list of servers.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">adapter</span><span class="symbol">: </span><span class="identifier">Adapter</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-item-count.html">getItemCount</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItemCount</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-list.html">getList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-bind-view-holder.html">onBindViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onBindViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.settings.ServerRecyclerAdapter$onBindViewHolder(cz.palda97.lpclient.view.settings.ServerRecyclerAdapter.ServerViewHolder, kotlin.Int)/holder">holder</span><span class="symbol">:</span>&nbsp;<a href="-server-view-holder/index.html"><span class="identifier">ServerViewHolder</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.settings.ServerRecyclerAdapter$onBindViewHolder(cz.palda97.lpclient.view.settings.ServerRecyclerAdapter.ServerViewHolder, kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-create-view-holder.html">onCreateViewHolder</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onCreateViewHolder</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.settings.ServerRecyclerAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/parent">parent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/view/ViewGroup.html"><span class="identifier">ViewGroup</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.settings.ServerRecyclerAdapter$onCreateViewHolder(android.view.ViewGroup, kotlin.Int)/viewType">viewType</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-server-view-holder/index.html"><span class="identifier">ServerViewHolder</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="update-server-list.html">updateServerList</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateServerList</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.settings.ServerRecyclerAdapter$updateServerList(kotlin.collections.List((cz.palda97.lpclient.model.entities.server.ServerInstance)))/newServerList">newServerList</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Update the content of this adapter.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

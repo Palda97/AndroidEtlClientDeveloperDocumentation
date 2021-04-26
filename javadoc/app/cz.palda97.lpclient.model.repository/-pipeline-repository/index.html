@@ -1,0 +1,214 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PipelineRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.repository</a>&nbsp;/&nbsp;<a href="./index.html">PipelineRepository</a><br/>
+<br/>
+<h1>PipelineRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">PipelineRepository</span></code>
+<p>Repository for working with <a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html">Pipeline</a>.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-cache-status/index.html">CacheStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">CacheStatus</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-status-code/index.html">StatusCode</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">StatusCode</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PipelineRepository</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineRepository$<init>(cz.palda97.lpclient.model.db.dao.ServerInstanceDao, cz.palda97.lpclient.model.db.dao.PipelineDao, android.content.SharedPreferences)/serverDao">serverDao</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.db.dao/-server-instance-dao/index.html"><span class="identifier">ServerInstanceDao</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineRepository$<init>(cz.palda97.lpclient.model.db.dao.ServerInstanceDao, cz.palda97.lpclient.model.db.dao.PipelineDao, android.content.SharedPreferences)/pipelineDao">pipelineDao</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.db.dao/-pipeline-dao/index.html"><span class="identifier">PipelineDao</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineRepository$<init>(cz.palda97.lpclient.model.db.dao.ServerInstanceDao, cz.palda97.lpclient.model.db.dao.PipelineDao, android.content.SharedPreferences)/sharedPreferences">sharedPreferences</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/SharedPreferences.html"><span class="identifier">SharedPreferences</span></a><span class="symbol">)</span></code>
+<p>Repository for working with <a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html">Pipeline</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="current-pipeline-id.html">currentPipelineId</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentPipelineId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-pipeline-view.html">currentPipelineView</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentPipelineView</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-server-id.html">currentServerId</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentServerId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-new-pipeline.html">liveNewPipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveNewPipeline</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="-cache-status/index.html"><span class="identifier">CacheStatus</span></a><span class="symbol">,</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>LiveData with information about new pipeline creation. Contains either <a href="-cache-status/index.html">CacheStatus</a> or
+<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html">PipelineView</a> on success.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="live-pipeline.html">livePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">livePipeline</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html"><span class="identifier">Pipeline</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>LiveData with the whole <a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html">Pipeline</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="live-upload-status.html">liveUploadStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveUploadStatus</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="-status-code/index.html"><span class="identifier">StatusCode</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with information about about pipeline uploading.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="cache-pipeline-init.html">cachePipelineInit</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">cachePipelineInit</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineRepository$cachePipelineInit(cz.palda97.lpclient.model.entities.pipelineview.PipelineView)/pipelineView">pipelineView</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code>
+<p>Sets <a href="live-pipeline.html">livePipeline</a> to <a href="../../cz.palda97.lpclient.model/-mail-package/-status/-l-o-a-d-i-n-g.html">loading</a>, then downloads and stores the pipeline.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="cannot-save-pipeline-for-upload.html">cannotSavePipelineForUpload</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">cannotSavePipelineForUpload</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets <a href="live-upload-status.html">liveUploadStatus</a> to <a href="-status-code/-i-n-t-e-r-n-a-l_-e-r-r-o-r.html">INTERNAL_ERROR</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="create-pipeline-init.html">createPipelineInit</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createPipelineInit</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineRepository$createPipelineInit(cz.palda97.lpclient.model.entities.server.ServerInstance)/server">server</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span></code>
+<p>Sends request to create new pipeline and propagates result through <a href="live-new-pipeline.html">liveNewPipeline</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-current-pipeline-view.html">insertCurrentPipelineView</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertCurrentPipelineView</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a><span class="symbol">?</span></code>
+<p>Insert <a href="current-pipeline-view.html">currentPipelineView</a> to the database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="reset-live-new-pipeline.html">resetLiveNewPipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resetLiveNewPipeline</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets <a href="live-new-pipeline.html">liveNewPipeline</a> to <a href="-cache-status/-n-o_-p-i-p-e-l-i-n-e_-t-o_-l-o-a-d.html">NO_PIPELINE_TO_LOAD</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="reset-upload-status.html">resetUploadStatus</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">resetUploadStatus</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets <a href="live-upload-status.html">liveUploadStatus</a> to <a href="-status-code/-n-e-u-t-r-a-l.html">NEUTRAL</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="retry-cache-pipeline.html">retryCachePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">retryCachePipeline</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Try downloading and storing pipeline again.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="save-pipeline.html">savePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">savePipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineRepository$savePipeline(cz.palda97.lpclient.model.entities.pipeline.Pipeline, kotlin.Boolean)/pipeline">pipeline</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html"><span class="identifier">Pipeline</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineRepository$savePipeline(cz.palda97.lpclient.model.entities.pipeline.Pipeline, kotlin.Boolean)/cacheComponents">cacheComponents</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Job</span><span class="symbol">?</span></code>
+<p>Replace the pipeline in database. Optionally cache components.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="upload-pipeline.html">uploadPipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">uploadPipeline</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets <a href="live-upload-status.html">liveUploadStatus</a> to <a href="-status-code/-u-p-l-o-a-d_-i-n_-p-r-o-g-r-e-s-s.html">UPLOAD_IN_PROGRESS</a>,
+upload current pipeline to the server and propagate result through liveUploadStatus.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-c-a-c-h-e_-s-t-a-t-u-s.html">CACHE_STATUS</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">CACHE_STATUS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-p-i-p-e-l-i-n-e_-i-d.html">PIPELINE_ID</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">PIPELINE_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-p-i-p-e-l-i-n-e_-s-e-r-v-e-r_-i-d.html">PIPELINE_SERVER_ID</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">PIPELINE_SERVER_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

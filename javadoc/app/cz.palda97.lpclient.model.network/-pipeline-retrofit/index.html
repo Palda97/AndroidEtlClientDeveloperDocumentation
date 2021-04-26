@@ -1,0 +1,120 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PipelineRetrofit - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.network</a>&nbsp;/&nbsp;<a href="./index.html">PipelineRetrofit</a><br/>
+<br/>
+<h1>PipelineRetrofit</h1>
+<code><span class="keyword">interface </span><span class="identifier">PipelineRetrofit</span></code>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="component-default-configuration.html">componentDefaultConfiguration</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">componentDefaultConfiguration</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.network.PipelineRetrofit$componentDefaultConfiguration(kotlin.String)/templateId">templateId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">ResponseBody</span><span class="symbol">&gt;</span></code>
+<p>Default configuration for a new <a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html">Component</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="component-list.html">componentList</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">componentList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">ResponseBody</span><span class="symbol">&gt;</span></code>
+<p>JsonLd containing all possible components.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="create-pipeline.html">createPipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">createPipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.network.PipelineRetrofit$createPipeline(okhttp3.RequestBody)/options">options</span><span class="symbol">:</span>&nbsp;<span class="identifier">RequestBody</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">ResponseBody</span><span class="symbol">&gt;</span></code>
+<p>Create new pipeline.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-pipeline.html">deletePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">deletePipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.network.PipelineRetrofit$deletePipeline(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">ResponseBody</span><span class="symbol">&gt;</span></code>
+<p>Delete the pipeline.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="execute-pipeline.html">executePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">executePipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.network.PipelineRetrofit$executePipeline(okhttp3.RequestBody)/pipeline">pipeline</span><span class="symbol">:</span>&nbsp;<span class="identifier">RequestBody</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">ResponseBody</span><span class="symbol">&gt;</span></code>
+<p>Execute a specific pipeline.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-pipeline.html">getPipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getPipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.network.PipelineRetrofit$getPipeline(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">ResponseBody</span><span class="symbol">&gt;</span></code>
+<p>Get a specific pipeline.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="pipeline-list.html">pipelineList</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">pipelineList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">ResponseBody</span><span class="symbol">&gt;</span></code>
+<p>JsonLd containing all <a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html">PipelineViews</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="template-configuration.html">templateConfiguration</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">templateConfiguration</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.network.PipelineRetrofit$templateConfiguration(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">ResponseBody</span><span class="symbol">&gt;</span></code>
+<p>Configuration for <a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html">Template</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-pipeline.html">updatePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">updatePipeline</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.network.PipelineRetrofit$updatePipeline(kotlin.String, okhttp3.RequestBody)/pipelineIdNumber">pipelineIdNumber</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.network.PipelineRetrofit$updatePipeline(kotlin.String, okhttp3.RequestBody)/jsonld">jsonld</span><span class="symbol">:</span>&nbsp;<span class="identifier">RequestBody</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Call</span><span class="symbol">&lt;</span><span class="identifier">ResponseBody</span><span class="symbol">&gt;</span></code>
+<p>Update pipeline.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-o-p-t-i-o-n-s.html">OPTIONS</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">OPTIONS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Json used for creating new pipeline.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="pipeline-retrofit.html">pipelineRetrofit</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">Builder</span><span class="symbol">.</span><span class="identifier">pipelineRetrofit</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">PipelineRetrofit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

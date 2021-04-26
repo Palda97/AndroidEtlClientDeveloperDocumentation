@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>cz.palda97.lpclient.model.db - app</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">app</a>&nbsp;/&nbsp;<a href="./index.html">cz.palda97.lpclient.model.db</a><br/>
+<br/>
+<h2>Package cz.palda97.lpclient.model.db</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-app-database/index.html">AppDatabase</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">AppDatabase</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">RoomDatabase</span></code>
+<p>Application database implemented with Room</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-converters/index.html">Converters</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Converters</span></code>
+<p>Functions that Room can use to work with entities that have non primitive members.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="-mark-for-deletion/index.html">MarkForDeletion</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MarkForDeletion</span></code>
+<p>Entity used to store keys of items determined for deletion.
+Marks are intended to be stored in database while the UNDO button
+is visible. If the application is killed before the delete request
+is sent, the mark alongside with the item for deletion stays in
+database and the delete request is sent on the next app start.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,99 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>DialogJs - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.entities.pipeline</a>&nbsp;/&nbsp;<a href="./index.html">DialogJs</a><br/>
+<br/>
+<h1>DialogJs</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">DialogJs</span></code>
+<p>Entity representing dialog.js.
+It is mainly used as a tool for mapping
+<a href="../-config-input/index.html">ConfigInput's</a> id to <a href="../-config/index.html">Config's</a> id.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">DialogJs</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.DialogJs$<init>(kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.String)/namespace">namespace</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.DialogJs$<init>(kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.String)/map">map</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.DialogJs$<init>(kotlin.String, kotlin.collections.Map((kotlin.String, )), kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code>
+<p>Entity representing dialog.js.
+It is mainly used as a tool for mapping
+<a href="../-config-input/index.html">ConfigInput's</a> id to <a href="../-config/index.html">Config's</a> id.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="component-id.html">componentId</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">componentId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="config-type.html">configType</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">configType</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>The main <a href="../-config/index.html">Config</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="control-regex.html">controlRegex</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">controlRegex</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.text/-regex/index.html"><span class="identifier">Regex</span></a></code>
+<p>Regex for matching the inheritance fields.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="map.html">map</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">map</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html"><span class="identifier">Map</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="namespace.html">namespace</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">namespace</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="full-control-name-to-reverse.html">fullControlNameToReverse</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">fullControlNameToReverse</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.DialogJs$fullControlNameToReverse(kotlin.String)/controlName">controlName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Maps inheritance id to <a href="../-config-input/index.html">ConfigInput's</a> id.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-full-property-name.html">getFullPropertyName</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFullPropertyName</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.DialogJs$getFullPropertyName(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code>
+<p>Maps <a href="../-config-input/index.html">ConfigInput's</a> id to <a href="../-config/index.html">Config's</a> id.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

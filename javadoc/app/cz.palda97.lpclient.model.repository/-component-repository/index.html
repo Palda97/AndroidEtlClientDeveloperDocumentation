@@ -1,0 +1,193 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ComponentRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.repository</a>&nbsp;/&nbsp;<a href="./index.html">ComponentRepository</a><br/>
+<br/>
+<h1>ComponentRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">ComponentRepository</span></code>
+<p>Repository for everything about components. It also includes <a href="../-binding-repository/index.html">BindingRepository</a>,
+<a href="../-configuration-repository/index.html">ConfigurationRepository</a> and <a href="../-connection-dialog-repository/index.html">ConnectionDialogRepository</a></p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-status-code/index.html">StatusCode</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">StatusCode</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ComponentRepository</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$<init>(cz.palda97.lpclient.model.db.dao.ServerInstanceDao, cz.palda97.lpclient.model.db.dao.PipelineDao, android.content.SharedPreferences)/serverDao">serverDao</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.db.dao/-server-instance-dao/index.html"><span class="identifier">ServerInstanceDao</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$<init>(cz.palda97.lpclient.model.db.dao.ServerInstanceDao, cz.palda97.lpclient.model.db.dao.PipelineDao, android.content.SharedPreferences)/pipelineDao">pipelineDao</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.db.dao/-pipeline-dao/index.html"><span class="identifier">PipelineDao</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$<init>(cz.palda97.lpclient.model.db.dao.ServerInstanceDao, cz.palda97.lpclient.model.db.dao.PipelineDao, android.content.SharedPreferences)/sharedPreferences">sharedPreferences</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/SharedPreferences.html"><span class="identifier">SharedPreferences</span></a><span class="symbol">)</span></code>
+<p>Repository for everything about components. It also includes <a href="../-binding-repository/index.html">BindingRepository</a>,
+<a href="../-configuration-repository/index.html">ConfigurationRepository</a> and <a href="../-connection-dialog-repository/index.html">ConnectionDialogRepository</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="binding-repository.html">bindingRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">bindingRepository</span><span class="symbol">: </span><a href="../-binding-repository/index.html"><span class="identifier">BindingRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="configuration-repository.html">configurationRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">configurationRepository</span><span class="symbol">: </span><a href="../-configuration-repository/index.html"><span class="identifier">ConfigurationRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="connection-dialog-repository.html">connectionDialogRepository</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">connectionDialogRepository</span><span class="symbol">: </span><a href="../-connection-dialog-repository/index.html"><span class="identifier">ConnectionDialogRepository</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-component.html">currentComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentComponent</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">?</span></code>
+<p>Current component for this repository.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="current-component-id.html">currentComponentId</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentComponentId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="current-template-id.html">currentTemplateId</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">currentTemplateId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="cache.html">cache</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">cache</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$cache(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Component)))/components">components</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code>
+<p>Download and store <a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html">Bindings</a>, <a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/index.html">ConfigInputs</a> and <a href="../../cz.palda97.lpclient.model.entities.pipeline/-dialog-js/index.html">DialogJs</a>
+for each component passed as argument.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">cache</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$cache(cz.palda97.lpclient.model.entities.pipeline.Component)/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code>
+<p>Download and store <a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html">Bindings</a>, <a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/index.html">ConfigInputs</a> and <a href="../../cz.palda97.lpclient.model.entities.pipeline/-dialog-js/index.html">DialogJs</a>
+for a component passed as argument.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="cache-binding.html">cacheBinding</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">cacheBinding</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$cacheBinding(kotlin.String)/templateId">templateId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>If the template's bindings are not stored in database or
+are not being currently downloaded, download them and store.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-connection.html">deleteConnection</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteConnection</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$deleteConnection(cz.palda97.lpclient.model.entities.pipeline.Connection)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">&gt;</span></code>
+<p>Delete connection from database alongside with it's vertexes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="delete-current-component.html">deleteCurrentComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">deleteCurrentComponent</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>If the current component is present in <a href="#">componentMap</a>, remove it and purge it from database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="persist-connection.html">persistConnection</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">persistConnection</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$persistConnection(cz.palda97.lpclient.model.entities.pipeline.Connection)/connection">connection</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Insert or update connection in database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="persist-vertexes.html">persistVertexes</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">persistVertexes</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$persistVertexes(kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Vertex)))/list">list</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-vertex/index.html"><span class="identifier">Vertex</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Insert or update vertexes in database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-important-ids.html">setImportantIds</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setImportantIds</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$setImportantIds(cz.palda97.lpclient.model.entities.pipeline.Component, kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Template)))/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$setImportantIds(cz.palda97.lpclient.model.entities.pipeline.Component, kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Template)))/templates">templates</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html"><span class="identifier">Template</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sets current component for this repository, for the <a href="../-configuration-repository/index.html">ConfigurationRepository</a>, for the
+<a href="../-connection-dialog-repository/index.html">ConnectionDialogRepository</a> and call <a href="../-binding-repository/set-important-ids.html">setImportantIds</a>
+with current component and root template.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update-component.html">updateComponent</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">updateComponent</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository$updateComponent(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>If the current component is present in <a href="#">componentMap</a>, update it in database.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-root-template-id.html">getRootTemplateId</a></p>
+</td>
+<td>
+<code><span class="keyword">tailrec</span> <span class="keyword">fun </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">.</span><span class="identifier">getRootTemplateId</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository.Companion$getRootTemplateId(cz.palda97.lpclient.model.entities.pipeline.Component, kotlin.collections.List((cz.palda97.lpclient.model.entities.pipeline.Template)))/templates">templates</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html"><span class="identifier">Template</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Get the root template id of the component
+using <a href="../../cz.palda97.lpclient.model.entities.pipeline/-template/index.html">Template</a> list as an argument.</p>
+<code><span class="keyword">tailrec</span> <span class="keyword">suspend</span> <span class="keyword">fun </span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html"><span class="identifier">Component</span></a><span class="symbol">.</span><span class="identifier">getRootTemplateId</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.ComponentRepository.Companion$getRootTemplateId(cz.palda97.lpclient.model.entities.pipeline.Component, cz.palda97.lpclient.model.db.dao.PipelineDao)/pipelineDao">pipelineDao</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.db.dao/-pipeline-dao/index.html"><span class="identifier">PipelineDao</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Get the root template id of the component
+using <a href="../../cz.palda97.lpclient.model.db.dao/-pipeline-dao/index.html">PipelineDao</a> as an argument.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

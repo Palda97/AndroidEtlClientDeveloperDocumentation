@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AdapterWithList - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.view</a>&nbsp;/&nbsp;<a href="./index.html">AdapterWithList</a><br/>
+<br/>
+<h1>AdapterWithList</h1>
+<code><span class="keyword">interface </span><span class="identifier">AdapterWithList</span><span class="symbol">&lt;</span><span class="identifier">item</span><span class="symbol">&gt;</span></code>
+<p>Interface for adapter and it's content.
+It is useful in <a href="../-recycler-view-cosmetics/index.html">RecyclerViewCosmetics</a> for swipe to delete function.</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="adapter.html">adapter</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">val </span><span class="identifier">adapter</span><span class="symbol">: </span><span class="identifier">Adapter</span><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-list.html">getList</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getList</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="index.html#item"><span class="identifier">item</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../cz.palda97.lpclient.view.editcomponent/-binding-adapter/index.html">BindingAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">BindingAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.view.editcomponent/-binding-adapter/-binding-view-holder/index.html"><span class="identifier">BindingViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html"><span class="identifier">Binding</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of binding buttons.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../cz.palda97.lpclient.view.editcomponent/-config-input-adapter/index.html">ConfigInputAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ConfigInputAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.view.editcomponent/-config-input-adapter/-config-input-view-holder/index.html"><span class="identifier">ConfigInputViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-config-input/index.html"><span class="identifier">ConfigInput</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of fields of configuration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../cz.palda97.lpclient.view.editcomponent/-connection-adapter/index.html">ConnectionAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ConnectionAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.view.editcomponent/-connection-adapter/-connection-view-holder/index.html"><span class="identifier">ConnectionViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-connection/index.html"><span class="identifier">Connection</span></a><span class="symbol">,</span>&nbsp;<a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-connection-v/-connection-item/index.html"><span class="identifier">ConnectionItem</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Adapter for list of connection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../cz.palda97.lpclient.view.executions/-execution-recycle-adapter/index.html">ExecutionRecycleAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ExecutionRecycleAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.view.executions/-execution-recycle-adapter/-execution-view-holder/index.html"><span class="identifier">ExecutionViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.viewmodel.executions/-execution-v/index.html"><span class="identifier">ExecutionV</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of executions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../cz.palda97.lpclient.view.editcomponent/-inheritance-adapter/index.html">InheritanceAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">InheritanceAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.view.editcomponent/-inheritance-adapter/-inheritance-view-holder/index.html"><span class="identifier">InheritanceViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-inheritance-v/index.html"><span class="identifier">InheritanceV</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of inheritance fields.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../cz.palda97.lpclient.view.pipelines/-pipeline-recycler-adapter/index.html">PipelineRecyclerAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PipelineRecyclerAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.view.pipelines/-pipeline-recycler-adapter/-pipeline-view-holder/index.html"><span class="identifier">PipelineViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of pipelineViews.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../cz.palda97.lpclient.view.settings/-server-recycler-adapter/index.html">ServerRecyclerAdapter</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ServerRecyclerAdapter</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Adapter</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.view.settings/-server-recycler-adapter/-server-view-holder/index.html"><span class="identifier">ServerViewHolder</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><a href="./index.html"><span class="identifier">AdapterWithList</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">&gt;</span></code>
+<p>Adapter for list of servers.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

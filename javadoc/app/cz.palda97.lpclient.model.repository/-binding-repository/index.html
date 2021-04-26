@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BindingRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.repository</a>&nbsp;/&nbsp;<a href="./index.html">BindingRepository</a><br/>
+<br/>
+<h1>BindingRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">BindingRepository</span></code>
+<p>Repository for bindings and connections.
+To set current component, call <a href="set-important-ids.html">setImportantIds</a></p>
+<p><strong>See Also</strong><br/>
+<p><a href="set-important-ids.html">setImportantIds</a></p>
+</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">BindingRepository</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.BindingRepository$<init>(cz.palda97.lpclient.model.db.dao.PipelineDao)/pipelineDao">pipelineDao</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.db.dao/-pipeline-dao/index.html"><span class="identifier">PipelineDao</span></a><span class="symbol">)</span></code>
+<p>Repository for bindings and connections.
+To set current component, call <a href="set-important-ids.html">setImportantIds</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="live-input-context.html">liveInputContext</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveInputContext</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-config-input-context/index.html"><span class="identifier">ConfigInputContext</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with current component's input connections.
+(including configuration)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="live-output-context.html">liveOutputContext</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveOutputContext</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.viewmodel.editcomponent/-config-input-context/index.html"><span class="identifier">ConfigInputContext</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with current component's output connections.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="live-bindings.html">liveBindings</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">liveBindings</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">LiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipeline/-status-with-binding/index.html"><span class="identifier">StatusWithBinding</span></a><span class="symbol">&gt;</span></code>
+<p>LiveData with current template's bindings.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-important-ids.html">setImportantIds</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setImportantIds</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.BindingRepository$setImportantIds(kotlin.String, kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.BindingRepository$setImportantIds(kotlin.String, kotlin.String)/templateId">templateId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Setup current <a href="../../cz.palda97.lpclient.model.entities.pipeline/-binding/index.html">Binding</a>s</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

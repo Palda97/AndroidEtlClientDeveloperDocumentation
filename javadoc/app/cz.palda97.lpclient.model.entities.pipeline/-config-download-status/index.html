@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ConfigDownloadStatus - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.entities.pipeline</a>&nbsp;/&nbsp;<a href="./index.html">ConfigDownloadStatus</a><br/>
+<br/>
+<h1>ConfigDownloadStatus</h1>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">ConfigDownloadStatus</span></code>
+<p>Entity representing download status of either <a href="../-config-input/index.html">ConfigInputs</a>,
+<a href="../-dialog-js/index.html">DialogJs</a> or <a href="../-binding/index.html">Bindings</a>.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ConfigDownloadStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.ConfigDownloadStatus$<init>(kotlin.String, kotlin.Int, cz.palda97.lpclient.model.repository.ComponentRepository.StatusCode)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.ConfigDownloadStatus$<init>(kotlin.String, kotlin.Int, cz.palda97.lpclient.model.repository.ComponentRepository.StatusCode)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.ConfigDownloadStatus$<init>(kotlin.String, kotlin.Int, cz.palda97.lpclient.model.repository.ComponentRepository.StatusCode)/result">result</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.repository/-component-repository/-status-code/index.html"><span class="identifier">StatusCode</span></a><span class="symbol">)</span></code><code><span class="identifier">ConfigDownloadStatus</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.ConfigDownloadStatus$<init>(kotlin.String, kotlin.Int, kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.ConfigDownloadStatus$<init>(kotlin.String, kotlin.Int, kotlin.String)/type">type</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.ConfigDownloadStatus$<init>(kotlin.String, kotlin.Int, kotlin.String)/result">result</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span></code>
+<p>Entity representing download status of either <a href="../-config-input/index.html">ConfigInputs</a>,
+<a href="../-dialog-js/index.html">DialogJs</a> or <a href="../-binding/index.html">Bindings</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="component-id.html">componentId</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">componentId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="result.html">result</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">result</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="type.html">type</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">type</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-b-i-n-d-i-n-g.html">TYPE_BINDING</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TYPE_BINDING</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-c-o-n-f-i-g_-i-n-p-u-t.html">TYPE_CONFIG_INPUT</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TYPE_CONFIG_INPUT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-t-y-p-e_-d-i-a-l-o-g_-j-s.html">TYPE_DIALOG_JS</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TYPE_DIALOG_JS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

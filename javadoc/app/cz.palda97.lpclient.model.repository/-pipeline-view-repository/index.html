@@ -1,0 +1,172 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PipelineViewRepository - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.repository</a>&nbsp;/&nbsp;<a href="./index.html">PipelineViewRepository</a><br/>
+<br/>
+<h1>PipelineViewRepository</h1>
+<code><span class="keyword">class </span><span class="identifier">PipelineViewRepository</span></code>
+<p>Repository for working with <a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html">PipelineViews</a>.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-status-code/index.html">StatusCode</a></p>
+</td>
+<td>
+<code><span class="keyword">enum</span> <span class="keyword">class </span><span class="identifier">StatusCode</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PipelineViewRepository</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$<init>(cz.palda97.lpclient.model.db.dao.PipelineViewDao, cz.palda97.lpclient.model.db.dao.ServerInstanceDao, cz.palda97.lpclient.model.db.dao.MarkForDeletionDao)/pipelineViewDao">pipelineViewDao</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.db.dao/-pipeline-view-dao/index.html"><span class="identifier">PipelineViewDao</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$<init>(cz.palda97.lpclient.model.db.dao.PipelineViewDao, cz.palda97.lpclient.model.db.dao.ServerInstanceDao, cz.palda97.lpclient.model.db.dao.MarkForDeletionDao)/serverInstanceDao">serverInstanceDao</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.db.dao/-server-instance-dao/index.html"><span class="identifier">ServerInstanceDao</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$<init>(cz.palda97.lpclient.model.db.dao.PipelineViewDao, cz.palda97.lpclient.model.db.dao.ServerInstanceDao, cz.palda97.lpclient.model.db.dao.MarkForDeletionDao)/deleteDao">deleteDao</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.db.dao/-mark-for-deletion-dao/index.html"><span class="identifier">MarkForDeletionDao</span></a><span class="symbol">)</span></code>
+<p>Repository for working with <a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html">PipelineViews</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="delete-repo.html">deleteRepo</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">deleteRepo</span><span class="symbol">: </span><a href="../-delete-repository/index.html"><span class="identifier">DeleteRepository</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="live-servers-with-pipeline-views.html">liveServersWithPipelineViews</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">liveServersWithPipelineViews</span><span class="symbol">: </span><span class="identifier">MediatorLiveData</span><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-server-with-pipeline-views/index.html"><span class="identifier">ServerWithPipelineViews</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>LiveData containing pipelineViews that belong to a server that is used as a filter,
+or all pipelineViews if no server is set as a filter. It is all wrapper in <a href="../../cz.palda97.lpclient.model/-mail-package/index.html">MailPackage</a>,
+so it can even represent <a href="../../cz.palda97.lpclient.model/-mail-package/-status/-l-o-a-d-i-n-g.html">loading</a> while the pipelineViews are being downloaded.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="clean-db.html">cleanDb</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">cleanDb</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Pair <a href="../../cz.palda97.lpclient.model.db/-mark-for-deletion/index.html">marks</a> with <a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html">pipelineViews</a>
+and send delete requests.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="download-pipeline-string.html">downloadPipelineString</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">downloadPipelineString</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$downloadPipelineString(cz.palda97.lpclient.model.entities.pipelineview.PipelineView)/pipelineView">pipelineView</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="-status-code/index.html"><span class="identifier">StatusCode</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code>
+<p>Downloads <a href="../../cz.palda97.lpclient.model.entities.pipeline/-pipeline/index.html">Pipeline</a> but doesn't parse it.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="download-pipeline-views.html">downloadPipelineViews</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">downloadPipelineViews</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$downloadPipelineViews(cz.palda97.lpclient.model.entities.server.ServerInstance)/serverInstance">serverInstance</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-server-with-pipeline-views/index.html"><span class="identifier">ServerWithPipelineViews</span></a><span class="symbol">&gt;</span></code>
+<p>Downloads the <a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html">PipelineViews</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="find-pipeline-view-by-id.html">findPipelineViewById</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">findPipelineViewById</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$findPipelineViewById(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">?</span></code>
+<p>Search the database for a <a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html">PipelineView</a> with this id.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-pipeline-retrofit.html">getPipelineRetrofit</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getPipelineRetrofit</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$getPipelineRetrofit(cz.palda97.lpclient.model.entities.pipelineview.PipelineView)/pipelineView">pipelineView</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="-status-code/index.html"><span class="identifier">StatusCode</span></a><span class="symbol">,</span>&nbsp;<a href="../../cz.palda97.lpclient.model.network/-pipeline-retrofit/index.html"><span class="identifier">PipelineRetrofit</span></a><span class="symbol">&gt;</span></code>
+<p>Creates a <a href="../../cz.palda97.lpclient.model.network/-pipeline-retrofit/index.html">PipelineRetrofit</a> based on the pipelineView.</p>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">getPipelineRetrofit</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$getPipelineRetrofit(cz.palda97.lpclient.model.entities.server.ServerInstance)/server">server</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="-status-code/index.html"><span class="identifier">StatusCode</span></a><span class="symbol">,</span>&nbsp;<a href="../../cz.palda97.lpclient.model.network/-pipeline-retrofit/index.html"><span class="identifier">PipelineRetrofit</span></a><span class="symbol">&gt;</span></code>
+<p>Creates a <a href="../../cz.palda97.lpclient.model.network/-pipeline-retrofit/index.html">PipelineRetrofit</a> based on the server instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="insert-pipeline-view.html">insertPipelineView</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">insertPipelineView</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$insertPipelineView(cz.palda97.lpclient.model.entities.pipelineview.PipelineView)/pipelineView">pipelineView</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Insert <a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html">PipelineView</a> into database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="mark-for-deletion.html">markForDeletion</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">markForDeletion</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$markForDeletion(cz.palda97.lpclient.model.entities.pipelineview.PipelineView)/pipelineView">pipelineView</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Add a <a href="../../cz.palda97.lpclient.model.db/-mark-for-deletion/index.html">mark</a> of this pipelineView to the database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-server-to-filter-change.html">onServerToFilterChange</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onServerToFilterChange</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Update <a href="live-servers-with-pipeline-views.html">liveServersWithPipelineViews</a> according to server that is used as a filter.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="refresh-pipeline-views.html">refreshPipelineViews</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">refreshPipelineViews</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$refreshPipelineViews(cz.palda97.lpclient.model.Either((cz.palda97.lpclient.model.entities.server.ServerInstance, kotlin.collections.List(()))))/either">either</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Downloads and stores the <a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html">PipelineViews</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="un-mark-for-deletion.html">unMarkForDeletion</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">unMarkForDeletion</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$unMarkForDeletion(cz.palda97.lpclient.model.entities.pipelineview.PipelineView)/pipelineView">pipelineView</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipelineview/-pipeline-view/index.html"><span class="identifier">PipelineView</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Unmark this pipelineView.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="update.html">update</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">update</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PipelineViewRepository$update(cz.palda97.lpclient.model.entities.server.ServerInstance)/server">server</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Called when active server is added, or an old server is now active.
+Tries to download pipelineViews. When successful, it updates the database,
+otherwise it does nothing.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

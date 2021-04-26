@@ -1,0 +1,24 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>CameraSource.autoFocus - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">com.varvet.barcodereadersample.camera</a>&nbsp;/&nbsp;<a href="index.html">CameraSource</a>&nbsp;/&nbsp;<a href="./auto-focus.html">autoFocus</a><br/>
+<br/>
+<h1>autoFocus</h1>
+<a name="com.varvet.barcodereadersample.camera.CameraSource$autoFocus(com.varvet.barcodereadersample.camera.CameraSource.AutoFocusCallback)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">autoFocus</span><span class="symbol">(</span><span class="identifier">@Nullable</span> <span class="identifier" id="com.varvet.barcodereadersample.camera.CameraSource$autoFocus(com.varvet.barcodereadersample.camera.CameraSource.AutoFocusCallback)/cb">cb</span><span class="symbol">:</span>&nbsp;<a href="-auto-focus-callback/index.html"><span class="identifier">AutoFocusCallback</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Starts camera auto-focus and registers a callback function to run when the camera is focused. This method is only valid when preview is active (between <code><a href="start.html">#start()</a></code> or <code><a href="start.html">#start(SurfaceHolder)</a></code> and before <code><a href="stop.html">#stop()</a></code> or <code><a href="release.html">#release()</a></code>).  
+<p>Callers should check <code><a href="get-focus-mode.html">#getFocusMode()</a></code> to determine if this method should be called. If the camera does not support auto-focus, it is a no-op and <code><a href="-auto-focus-callback/on-auto-focus.html">AutoFocusCallback#onAutoFocus(boolean)</a></code> callback will be called immediately. </p>
+ 
+<p>If the current flash mode is not <code><a href="#">Camera.Parameters#FLASH_MODE_OFF</a></code>, flash may be fired during auto-focus, depending on the driver and camera hardware.</p>
+</p>
+<h3>Parameters</h3>
+<p><a name="cb"></a>
+<code>cb</code> - the callback to run</p>
+<p><strong>See Also</strong><br/>
+<a href="cancel-auto-focus.html">#cancelAutoFocus()</a></p>
+</BODY>
+</HTML>

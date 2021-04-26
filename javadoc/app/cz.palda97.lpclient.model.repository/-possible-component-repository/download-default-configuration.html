@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PossibleComponentRepository.downloadDefaultConfiguration - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.repository</a>&nbsp;/&nbsp;<a href="index.html">PossibleComponentRepository</a>&nbsp;/&nbsp;<a href="./download-default-configuration.html">downloadDefaultConfiguration</a><br/>
+<br/>
+<h1>downloadDefaultConfiguration</h1>
+<a name="cz.palda97.lpclient.model.repository.PossibleComponentRepository$downloadDefaultConfiguration(cz.palda97.lpclient.model.entities.possiblecomponent.PossibleComponent, kotlin.String)"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">downloadDefaultConfiguration</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PossibleComponentRepository$downloadDefaultConfiguration(cz.palda97.lpclient.model.entities.possiblecomponent.PossibleComponent, kotlin.String)/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.possiblecomponent/-possible-component/index.html"><span class="identifier">PossibleComponent</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.PossibleComponentRepository$downloadDefaultConfiguration(cz.palda97.lpclient.model.entities.possiblecomponent.PossibleComponent, kotlin.String)/newComponentId">newComponentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="-status-code/index.html"><span class="identifier">StatusCode</span></a><span class="symbol">,</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">&gt;</span></code>
+<p>Downloads a <a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html">Configuration</a> for a new <a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html">Component</a> from <a href="current-server-id.html">current server</a>.</p>
+<h3>Parameters</h3>
+<p><a name="component"></a>
+<code>component</code> - This method will download configuration of this component.</p>
+<p><a name="newComponentId"></a>
+<code>newComponentId</code> - Newly generated id for a new <a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html">Component</a>.</p>
+<p><strong>Return</strong><br/>
+Configuration or <a href="-status-code/index.html">StatusCode</a> on error.</p>
+<a name="cz.palda97.lpclient.model.repository.PossibleComponentRepository$downloadDefaultConfiguration(cz.palda97.lpclient.model.entities.possiblecomponent.PossibleComponent, kotlin.String, cz.palda97.lpclient.model.entities.server.ServerInstance)"></a>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">downloadDefaultConfiguration</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.repository.PossibleComponentRepository$downloadDefaultConfiguration(cz.palda97.lpclient.model.entities.possiblecomponent.PossibleComponent, kotlin.String, cz.palda97.lpclient.model.entities.server.ServerInstance)/component">component</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.possiblecomponent/-possible-component/index.html"><span class="identifier">PossibleComponent</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.PossibleComponentRepository$downloadDefaultConfiguration(cz.palda97.lpclient.model.entities.possiblecomponent.PossibleComponent, kotlin.String, cz.palda97.lpclient.model.entities.server.ServerInstance)/newComponentId">newComponentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.repository.PossibleComponentRepository$downloadDefaultConfiguration(cz.palda97.lpclient.model.entities.possiblecomponent.PossibleComponent, kotlin.String, cz.palda97.lpclient.model.entities.server.ServerInstance)/server">server</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model/-either/index.html"><span class="identifier">Either</span></a><span class="symbol">&lt;</span><a href="-status-code/index.html"><span class="identifier">StatusCode</span></a><span class="symbol">,</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">&gt;</span></code>
+<p>Downloads a <a href="../../cz.palda97.lpclient.model.entities.pipeline/-configuration/index.html">Configuration</a> for a new <a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html">Component</a>.</p>
+<h3>Parameters</h3>
+<p><a name="component"></a>
+<code>component</code> - This method will download configuration of this component.</p>
+<p><a name="newComponentId"></a>
+<code>newComponentId</code> - Newly generated id for a new <a href="../../cz.palda97.lpclient.model.entities.pipeline/-component/index.html">Component</a>.</p>
+<p><a name="server"></a>
+<code>server</code> - Server from which the configuration will be downloaded.</p>
+<p><strong>Return</strong><br/>
+Configuration or <a href="-status-code/index.html">StatusCode</a> on error.</p>
+</BODY>
+</HTML>

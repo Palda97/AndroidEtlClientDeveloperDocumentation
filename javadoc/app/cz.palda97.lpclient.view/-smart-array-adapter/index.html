@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SmartArrayAdapter - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.view</a>&nbsp;/&nbsp;<a href="./index.html">SmartArrayAdapter</a><br/>
+<br/>
+<h1>SmartArrayAdapter</h1>
+<code><span class="keyword">class </span><span class="identifier">SmartArrayAdapter</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/widget/ArrayAdapter.html"><span class="identifier">ArrayAdapter</span></a><span class="symbol">&lt;</span><a href="-pair-wrapper/index.html"><span class="identifier">PairWrapper</span></a><span class="symbol">&lt;</span><a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Adapter that contains items of certain type and their text representation.</p>
+<h3>Parameters</h3>
+<p><a name="T"></a>
+<code>T</code> - The type of items stored in this adapter.</p>
+<p><a name="resource"></a>
+<code>resource</code> - Dropdown item resource id.</p>
+<p><a name="shouldFilter"></a>
+<code>shouldFilter</code> - If the dropdown should filter suggestions while typing in.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-pair-wrapper/index.html">PairWrapper</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">PairWrapper</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code>
+<p>Wrapper for T and it's text representation. Method toString() returns the text representation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">SmartArrayAdapter</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.SmartArrayAdapter$<init>(android.content.Context, kotlin.Int, kotlin.Boolean)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.SmartArrayAdapter$<init>(android.content.Context, kotlin.Int, kotlin.Boolean)/resource">resource</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.view.SmartArrayAdapter$<init>(android.content.Context, kotlin.Int, kotlin.Boolean)/shouldFilter">shouldFilter</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;true<span class="symbol">)</span></code>
+<p>Adapter that contains items of certain type and their text representation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="items.html">items</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">items</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-pair/index.html"><span class="identifier">Pair</span></a><span class="symbol">&lt;</span><a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code>
+<p>Items stored in this adapter.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="last-selected-item-id.html">lastSelectedItemId</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">lastSelectedItemId</span><span class="symbol">: </span><a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">?</span></code>
+<p>Last selected item or null if no item has been selected.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="last-selected-position.html">lastSelectedPosition</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">lastSelectedPosition</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span></code>
+<p>Position of item that was selected last. Can be null if no item has been selected.
+Has a modified setter, that ignores values smaller than zero.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="get-filter.html">getFilter</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getFilter</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/widget/Filter.html"><span class="identifier">Filter</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="get-item.html">getItem</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getItem</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.SmartArrayAdapter$getItem(kotlin.Int)/position">position</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="-pair-wrapper/index.html"><span class="identifier">PairWrapper</span></a><span class="symbol">&lt;</span><a href="index.html#T"><span class="identifier">T</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code>
+<p>Get item stored on this position.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="index-of.html">indexOf</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">indexOf</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.view.SmartArrayAdapter$indexOf(kotlin.Any)/item">item</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Get index of this item.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-l-a-s-t_-s-e-l-e-c-t-e-d.html">LAST_SELECTED</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">LAST_SELECTED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Position of last selected item. Useful in <a href="get-item.html">getItem</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

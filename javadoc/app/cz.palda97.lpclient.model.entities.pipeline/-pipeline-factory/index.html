@@ -1,0 +1,69 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PipelineFactory - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.entities.pipeline</a>&nbsp;/&nbsp;<a href="./index.html">PipelineFactory</a><br/>
+<br/>
+<h1>PipelineFactory</h1>
+<code><span class="keyword">class </span><span class="identifier">PipelineFactory</span></code>
+<p>Factory for transforming jsonLd to <a href="../-pipeline/index.html">Pipeline</a>.</p>
+<h3>Parameters</h3>
+<p><a name="server"></a>
+<code>server</code> - Server corresponding to the Pipeline.
+Can be null if using this factory to just parse configuration.</p>
+<p><a name="string"></a>
+<code>string</code> - JsonLd containing the Pipeline.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-mutable-pipeline/index.html">MutablePipeline</a></p>
+</td>
+<td>
+<code><span class="keyword">data</span> <span class="keyword">class </span><span class="identifier">MutablePipeline</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">PipelineFactory</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.PipelineFactory$<init>(cz.palda97.lpclient.model.entities.server.ServerInstance, kotlin.String)/server">server</span><span class="symbol">:</span>&nbsp;<a href="../../cz.palda97.lpclient.model.entities.server/-server-instance/index.html"><span class="identifier">ServerInstance</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.PipelineFactory$<init>(cz.palda97.lpclient.model.entities.server.ServerInstance, kotlin.String)/string">string</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span></code>
+<p>Factory for transforming jsonLd to <a href="../-pipeline/index.html">Pipeline</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="parse.html">parse</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">parse</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="../-pipeline/index.html"><span class="identifier">Pipeline</span></a><span class="symbol">&gt;</span></code>
+<p>Parse jsonLd to <a href="../-pipeline/index.html">Pipeline</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="parse-configuration-only.html">parseConfigurationOnly</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">parseConfigurationOnly</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.entities.pipeline.PipelineFactory$parseConfigurationOnly(kotlin.String)/componentId">componentId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="../../cz.palda97.lpclient.model/-mail-package/index.html"><span class="identifier">MailPackage</span></a><span class="symbol">&lt;</span><a href="../-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">&gt;</span></code>
+<p>Parse jsonLd to <a href="../-configuration/index.html">Configuration</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

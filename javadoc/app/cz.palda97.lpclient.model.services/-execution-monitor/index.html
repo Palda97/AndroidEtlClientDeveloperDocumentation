@@ -1,0 +1,82 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ExecutionMonitor - app</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">app</a>&nbsp;/&nbsp;<a href="../index.html">cz.palda97.lpclient.model.services</a>&nbsp;/&nbsp;<a href="./index.html">ExecutionMonitor</a><br/>
+<br/>
+<h1>ExecutionMonitor</h1>
+<code><span class="keyword">class </span><span class="identifier">ExecutionMonitor</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">CoroutineWorker</span></code>
+<p>Class for monitoring executions of executed pipelines.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">ExecutionMonitor</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.services.ExecutionMonitor$<init>(android.content.Context, androidx.work.WorkerParameters)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.services.ExecutionMonitor$<init>(android.content.Context, androidx.work.WorkerParameters)/params">params</span><span class="symbol">:</span>&nbsp;<span class="identifier">WorkerParameters</span><span class="symbol">)</span></code>
+<p>Class for monitoring executions of executed pipelines.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="do-work.html">doWork</a></p>
+</td>
+<td>
+<code><span class="keyword">suspend</span> <span class="keyword">fun </span><span class="identifier">doWork</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Result</span></code>
+<p>Start one monitoring round.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-e-x-e-c-u-t-i-o-n_-i-d.html">EXECUTION_ID</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">EXECUTION_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-p-i-p-e-l-i-n-e_-n-a-m-e.html">PIPELINE_NAME</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">PIPELINE_NAME</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="-s-e-r-v-e-r_-i-d.html">SERVER_ID</a></p>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">SERVER_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="enqueue.html">enqueue</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">enqueue</span><span class="symbol">(</span><span class="identifier" id="cz.palda97.lpclient.model.services.ExecutionMonitor.Companion$enqueue(android.content.Context, kotlin.String, kotlin.Long, kotlin.String, kotlin.Boolean)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.services.ExecutionMonitor.Companion$enqueue(android.content.Context, kotlin.String, kotlin.Long, kotlin.String, kotlin.Boolean)/executionId">executionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.services.ExecutionMonitor.Companion$enqueue(android.content.Context, kotlin.String, kotlin.Long, kotlin.String, kotlin.Boolean)/serverId">serverId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.services.ExecutionMonitor.Companion$enqueue(android.content.Context, kotlin.String, kotlin.Long, kotlin.String, kotlin.Boolean)/pipelineName">pipelineName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="cz.palda97.lpclient.model.services.ExecutionMonitor.Companion$enqueue(android.content.Context, kotlin.String, kotlin.Long, kotlin.String, kotlin.Boolean)/periodic">periodic</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Operation</span></code>
+<p>Create and enqueue request with the WorkManager.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
