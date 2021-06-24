@@ -25,7 +25,7 @@ Entities for the database and factories to produce them, mainly from jsonLd.
 Repository classes responsible for communicating with the network layer and DAO layer. These are the only single source of truth for the viewmodel layer.
 
 ### services
-There is a CoroutineWorker that is fed to the WorkManager and is used for monitoring the execution status of pipelines executed via this application.
+There is a CoroutineWorker that is fed to the WorkManager and is used for monitoring execution statuses of all executed pipelines.
 
 ### travelobjects
 Package containing code for working with jsonLd.
